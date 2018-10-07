@@ -1,0 +1,476 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2018-09-24 15:52+0000\n"
+"PO-Revision-Date: 2018-09-24 12:02-0400\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.1.1\n"
+"Last-Translator: \n"
+"Language: it_IT\n"
+
+#: Controller/AirportsController.php:36
+msgid "The airport has been saved."
+msgstr "L'aeroporto è stato salvato"
+
+#: Controller/AirportsController.php:39
+msgid "Unable to add your airport."
+msgstr "Impossibile aggiungere il tuo aeroporto"
+
+#: Controller/AirportsController.php:56
+msgid "Your airport has been updated."
+msgstr "Il tuo aeroporto è stato aggiornato"
+
+#: Controller/AirportsController.php:59
+msgid "Unable to update your airport."
+msgstr "Impossibile aggiornare il tuo aeroporto"
+
+#: Controller/AirportsController.php:69
+msgid "The airport has been deleted."
+msgstr "L'aeroporto è stato cancellato"
+
+#: Controller/AirportsController.php:71
+msgid "The airport could not be deleted. Please, try again."
+msgstr "L'aeroporto non può essere cancellato. Per favore, riprova."
+
+#: Controller/FlightsController.php:58;86
+msgid "The flight has been saved."
+msgstr "Il volo è stato salvato."
+
+#: Controller/FlightsController.php:62;90
+msgid "The flight could not be saved. Please, try again."
+msgstr "Il volo non può essere salvato. Per favore, riprova."
+
+#: Controller/FlightsController.php:111
+msgid "The flight has been deleted."
+msgstr "Il volo è stato cancellato."
+
+#: Controller/FlightsController.php:113
+msgid "The flight could not be deleted. Please, try again."
+msgstr "Il volo non può essere cancellato. Per favore, riprova."
+
+#: Controller/PassengersController.php:55;79
+msgid "The passenger has been saved."
+msgstr "Il passeggero è stato salvato."
+
+#: Controller/PassengersController.php:59;83
+msgid "The passenger could not be saved. Please, try again."
+msgstr "Il passeggero non può essere salvato. Per favore, riprova."
+
+#: Controller/PassengersController.php:100
+msgid "The passenger has been deleted."
+msgstr "Il passeggero è stato cancellato."
+
+#: Controller/PassengersController.php:102
+msgid "The passenger could not be deleted. Please, try again."
+msgstr "Il passeggero non può essere cancellato. Per favore, riprova."
+
+#: Controller/TagsController.php:55;80
+msgid "The tag has been saved."
+msgstr "Il tag è stato salvato."
+
+#: Controller/TagsController.php:59;84
+msgid "The tag could not be saved. Please, try again."
+msgstr "Il tag non può essere salvato. Per favore, riprova."
+
+#: Controller/TagsController.php:102
+msgid "The tag has been deleted."
+msgstr "Il tag è stato cancellato."
+
+#: Controller/TagsController.php:104
+msgid "The tag could not be deleted. Please, try again."
+msgstr "Il tag non può essere cancellato. Per favore, riprova."
+
+#: Controller/UsersController.php:52;75
+msgid "The user has been saved."
+msgstr "L'utente è stato salvato."
+
+#: Controller/UsersController.php:56;79
+msgid "The user could not be saved. Please, try again."
+msgstr "L'utente non può essere salvato. Per favore, riprova."
+
+#: Controller/UsersController.php:95
+msgid "The user has been deleted."
+msgstr "L'utente è stato cancellato."
+
+#: Controller/UsersController.php:97
+msgid "The user could not be deleted. Please, try again."
+msgstr "L'utente non può essere cancellato. Per favore, riprova."
+
+#: Template/Airports/add.ctp:9 Template/Airports/edit.ctp:9
+#: Template/Airports/index.ctp:9;26 Template/Airports/view.ctp:9;60
+#: Template/Flights/add.ctp:9 Template/Flights/edit.ctp:9
+#: Template/Flights/index.ctp:9;35 Template/Flights/view.ctp:9;73
+#: Template/Passengers/add.ctp:9 Template/Passengers/edit.ctp:9
+#: Template/Passengers/index.ctp:9;28 Template/Passengers/view.ctp:9;68
+#: Template/Tags/add.ctp:9 Template/Tags/edit.ctp:9
+#: Template/Tags/index.ctp:9;24 Template/Tags/view.ctp:9;52
+#: Template/Users/add.ctp:9 Template/Users/edit.ctp:9
+#: Template/Users/index.ctp:9;21 Template/Users/view.ctp:9;56
+msgid "Actions"
+msgstr "Azioni"
+
+#: Template/Airports/add.ctp:10 Template/Airports/edit.ctp:16
+#: Template/Airports/view.ctp:12 Template/Flights/add.ctp:15
+#: Template/Flights/edit.ctp:21 Template/Flights/index.ctp:15
+#: Template/Flights/view.ctp:18
+msgid "List Airports"
+msgstr "Elenco aeroporti"
+
+#: Template/Airports/add.ctp:11 Template/Airports/edit.ctp:17
+#: Template/Airports/index.ctp:11 Template/Airports/view.ctp:14
+#: Template/Flights/add.ctp:10 Template/Flights/edit.ctp:16
+#: Template/Flights/view.ctp:12 Template/Passengers/add.ctp:11
+#: Template/Passengers/edit.ctp:17 Template/Passengers/index.ctp:11
+#: Template/Passengers/view.ctp:14 Template/Tags/add.ctp:11
+#: Template/Tags/edit.ctp:17 Template/Tags/index.ctp:11
+#: Template/Tags/view.ctp:14 Template/Users/add.ctp:11
+#: Template/Users/edit.ctp:17 Template/Users/index.ctp:11
+#: Template/Users/view.ctp:14
+msgid "List Flights"
+msgstr "Elenco dei voli"
+
+#: Template/Airports/add.ctp:12 Template/Airports/edit.ctp:18
+#: Template/Airports/index.ctp:12 Template/Airports/view.ctp:15
+#: Template/Flights/index.ctp:10 Template/Flights/view.ctp:13
+#: Template/Passengers/add.ctp:12 Template/Passengers/edit.ctp:18
+#: Template/Passengers/index.ctp:12 Template/Passengers/view.ctp:15
+#: Template/Tags/add.ctp:12 Template/Tags/edit.ctp:18
+#: Template/Tags/index.ctp:12 Template/Tags/view.ctp:15
+#: Template/Users/add.ctp:12 Template/Users/edit.ctp:18
+#: Template/Users/index.ctp:12 Template/Users/view.ctp:15
+msgid "New Flight"
+msgstr "Nuovo volo"
+
+#: Template/Airports/add.ctp:18
+msgid "Add Airport"
+msgstr "Aggiungi aeroporto"
+
+#: Template/Airports/add.ctp:25 Template/Airports/edit.ctp:31
+#: Template/Flights/add.ctp:35 Template/Flights/edit.ctp:41
+#: Template/Passengers/add.ctp:27 Template/Passengers/edit.ctp:33
+#: Template/Tags/add.ctp:25 Template/Tags/edit.ctp:31 Template/Users/add.ctp:24
+#: Template/Users/edit.ctp:30
+msgid "Submit"
+msgstr "Sottoscrivi"
+
+#: Template/Airports/edit.ctp:11 Template/Airports/index.ctp:41
+#: Template/Airports/view.ctp:76 Template/Flights/edit.ctp:11
+#: Template/Flights/index.ctp:53 Template/Flights/view.ctp:84
+#: Template/Passengers/edit.ctp:11 Template/Passengers/index.ctp:45
+#: Template/Passengers/view.ctp:84 Template/Tags/edit.ctp:11
+#: Template/Tags/index.ctp:37 Template/Tags/view.ctp:68
+#: Template/Users/edit.ctp:11 Template/Users/index.ctp:31
+#: Template/Users/view.ctp:72
+msgid "Delete"
+msgstr "Elimina"
+
+#: Template/Airports/edit.ctp:13 Template/Airports/index.ctp:41
+#: Template/Airports/view.ctp:11;76 Template/Flights/edit.ctp:13
+#: Template/Flights/index.ctp:53 Template/Flights/view.ctp:11;84
+#: Template/Passengers/edit.ctp:13 Template/Passengers/index.ctp:45
+#: Template/Passengers/view.ctp:11;84 Template/Tags/edit.ctp:13
+#: Template/Tags/index.ctp:37 Template/Tags/view.ctp:11;68
+#: Template/Users/edit.ctp:13 Template/Users/index.ctp:31
+#: Template/Users/view.ctp:11;72
+msgid "Are you sure you want to delete # {0}?"
+msgstr "Sei sicuro di voler eliminare # {0} ?"
+
+#: Template/Airports/edit.ctp:24 Template/Airports/view.ctp:10
+msgid "Edit Airport"
+msgstr "Modifica aeroporto"
+
+#: Template/Airports/index.ctp:10 Template/Airports/view.ctp:13
+#: Template/Flights/add.ctp:16 Template/Flights/edit.ctp:22
+#: Template/Flights/index.ctp:16 Template/Flights/view.ctp:19
+msgid "New Airport"
+msgstr "Nuovo aeroporto"
+
+#: Template/Airports/index.ctp:16
+msgid "Airports"
+msgstr "aeroporti"
+
+#: Template/Airports/index.ctp:39 Template/Airports/view.ctp:74
+#: Template/Flights/index.ctp:51 Template/Flights/view.ctp:82
+#: Template/Passengers/index.ctp:43 Template/Passengers/view.ctp:82
+#: Template/Tags/index.ctp:35 Template/Tags/view.ctp:66
+#: Template/Users/index.ctp:29 Template/Users/view.ctp:70
+msgid "View"
+msgstr "vista"
+
+#: Template/Airports/index.ctp:40 Template/Airports/view.ctp:75
+#: Template/Flights/index.ctp:52 Template/Flights/view.ctp:83
+#: Template/Passengers/index.ctp:44 Template/Passengers/view.ctp:83
+#: Template/Tags/index.ctp:36 Template/Tags/view.ctp:67
+#: Template/Users/index.ctp:30 Template/Users/view.ctp:71
+msgid "Edit"
+msgstr "modificare"
+
+#: Template/Airports/index.ctp:49 Template/Flights/index.ctp:61
+#: Template/Passengers/index.ctp:53 Template/Tags/index.ctp:45
+#: Template/Users/index.ctp:39
+msgid "first"
+msgstr "primo"
+
+#: Template/Airports/index.ctp:50 Template/Flights/index.ctp:62
+#: Template/Passengers/index.ctp:54 Template/Tags/index.ctp:46
+#: Template/Users/index.ctp:40
+msgid "previous"
+msgstr "precedente"
+
+#: Template/Airports/index.ctp:52 Template/Flights/index.ctp:64
+#: Template/Passengers/index.ctp:56 Template/Tags/index.ctp:48
+#: Template/Users/index.ctp:42
+msgid "next"
+msgstr "Il prossimo"
+
+#: Template/Airports/index.ctp:53 Template/Flights/index.ctp:65
+#: Template/Passengers/index.ctp:57 Template/Tags/index.ctp:49
+#: Template/Users/index.ctp:43
+msgid "last"
+msgstr "ultimo"
+
+#: Template/Airports/index.ctp:55 Template/Flights/index.ctp:67
+#: Template/Passengers/index.ctp:59 Template/Tags/index.ctp:51
+#: Template/Users/index.ctp:45
+msgid ""
+"Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} "
+"total"
+msgstr "Pagina {{pagina}} di {{pagine}}, che mostra {{current}} record (s) su {{count}} totali"
+
+#: Template/Airports/view.ctp:11
+msgid "Delete Airport"
+msgstr "Elimina aeroporto"
+
+#: Template/Airports/view.ctp:22 Template/Passengers/view.ctp:22
+msgid "Name"
+msgstr "Nome"
+
+#: Template/Airports/view.ctp:26
+msgid "City"
+msgstr "Città"
+
+#: Template/Airports/view.ctp:30 Template/Passengers/view.ctp:34
+msgid "Address"
+msgstr "Indirizzo"
+
+#: Template/Airports/view.ctp:34;51 Template/Flights/view.ctp:40;69
+#: Template/Passengers/view.ctp:42;59 Template/Tags/view.ctp:26;43
+#: Template/Users/view.ctp:30;47
+msgid "Id"
+msgstr "Id"
+
+#: Template/Airports/view.ctp:38;58 Template/Flights/view.ctp:44;71
+#: Template/Passengers/view.ctp:46;66 Template/Tags/view.ctp:30;50
+#: Template/Users/view.ctp:34;54
+msgid "Created"
+msgstr "Creato"
+
+#: Template/Airports/view.ctp:42;59 Template/Flights/view.ctp:48
+#: Template/Passengers/view.ctp:50;67 Template/Tags/view.ctp:51
+#: Template/Users/view.ctp:38;55
+msgid "Modified"
+msgstr "Modificata"
+
+#: Template/Airports/view.ctp:47 Template/Passengers/view.ctp:55
+#: Template/Tags/view.ctp:39 Template/Users/view.ctp:43
+msgid "Related Flights"
+msgstr "Voli correlati"
+
+#: Template/Airports/view.ctp:52 Template/Passengers/view.ctp:60
+#: Template/Tags/view.ctp:44 Template/Users/view.ctp:48
+msgid "User Id"
+msgstr "ID utente"
+
+#: Template/Airports/view.ctp:53 Template/Passengers/view.ctp:61
+#: Template/Tags/view.ctp:45 Template/Users/view.ctp:49
+msgid "Passenger Id"
+msgstr "ID passeggeri"
+
+#: Template/Airports/view.ctp:54 Template/Passengers/view.ctp:62
+#: Template/Tags/view.ctp:46 Template/Users/view.ctp:50
+msgid "Airport Id"
+msgstr "ID aeroporto"
+
+#: Template/Airports/view.ctp:55 Template/Flights/view.ctp:52
+#: Template/Passengers/view.ctp:63 Template/Tags/view.ctp:47
+#: Template/Users/view.ctp:51
+msgid "Depart"
+msgstr "partire"
+
+#: Template/Airports/view.ctp:56 Template/Flights/view.ctp:56
+#: Template/Passengers/view.ctp:64 Template/Tags/view.ctp:48
+#: Template/Users/view.ctp:52
+msgid "Arrival"
+msgstr "Arrivo"
+
+#: Template/Airports/view.ctp:57 Template/Flights/view.ctp:60
+#: Template/Passengers/view.ctp:65 Template/Tags/view.ctp:49
+#: Template/Users/view.ctp:53
+msgid "Date Reservation"
+msgstr "Data di prenotazione"
+
+#: Template/Flights/add.ctp:11 Template/Flights/edit.ctp:17
+#: Template/Flights/index.ctp:11 Template/Flights/view.ctp:14
+#: Template/Users/add.ctp:10 Template/Users/edit.ctp:16
+#: Template/Users/view.ctp:12
+msgid "List Users"
+msgstr "Elenco utenti"
+
+#: Template/Flights/add.ctp:12 Template/Flights/edit.ctp:18
+#: Template/Flights/index.ctp:12 Template/Flights/view.ctp:15
+#: Template/Users/index.ctp:10 Template/Users/view.ctp:13
+msgid "New User"
+msgstr "Nuovo utente"
+
+#: Template/Flights/add.ctp:13 Template/Flights/edit.ctp:19
+#: Template/Flights/index.ctp:13 Template/Flights/view.ctp:16
+#: Template/Passengers/add.ctp:10 Template/Passengers/edit.ctp:16
+#: Template/Passengers/view.ctp:12
+msgid "List Passengers"
+msgstr "Elenco dei passeggeri"
+
+#: Template/Flights/add.ctp:14 Template/Flights/edit.ctp:20
+#: Template/Flights/index.ctp:14 Template/Flights/view.ctp:17
+#: Template/Passengers/index.ctp:10 Template/Passengers/view.ctp:13
+msgid "New Passenger"
+msgstr "Nuovo passeggero"
+
+#: Template/Flights/add.ctp:17 Template/Flights/edit.ctp:23
+#: Template/Flights/index.ctp:17 Template/Flights/view.ctp:20
+#: Template/Tags/add.ctp:10 Template/Tags/edit.ctp:16 Template/Tags/view.ctp:12
+msgid "List Tags"
+msgstr "Elenca i tag"
+
+#: Template/Flights/add.ctp:18 Template/Flights/edit.ctp:24
+#: Template/Flights/index.ctp:18 Template/Flights/view.ctp:21
+#: Template/Tags/index.ctp:10 Template/Tags/view.ctp:13
+msgid "New Tag"
+msgstr "Nuovo tag"
+
+#: Template/Flights/add.ctp:24
+msgid "Add Flight"
+msgstr "Aggiungi volo"
+
+#: Template/Flights/edit.ctp:30 Template/Flights/view.ctp:10
+msgid "Edit Flight"
+msgstr "Modifica volo"
+
+#: Template/Flights/index.ctp:22
+msgid "Flights"
+msgstr "voli"
+
+#: Template/Flights/view.ctp:11
+msgid "Delete Flight"
+msgstr "Elimina volo"
+
+#: Template/Flights/view.ctp:28
+msgid "User"
+msgstr "Utente"
+
+#: Template/Flights/view.ctp:32
+msgid "Passenger"
+msgstr "Passeggeri"
+
+#: Template/Flights/view.ctp:36
+msgid "Airport"
+msgstr "Aeroporto"
+
+#: Template/Flights/view.ctp:65
+msgid "Related Tags"
+msgstr "Tag correlati"
+
+#: Template/Flights/view.ctp:70 Template/Tags/view.ctp:22
+msgid "Title"
+msgstr "Titolo"
+
+#: Template/Flights/view.ctp:72 Template/Tags/view.ctp:34
+msgid "Modifief"
+msgstr "Modifief"
+
+#: Template/Layout/default.ctp:53
+msgid "Logout"
+msgstr "Disconnettersi"
+
+#: Template/Layout/default.ctp:57
+msgid "Login"
+msgstr "Accesso"
+
+#: Template/Layout/error.ctp:35
+msgid "Error"
+msgstr "Errore"
+
+#: Template/Layout/error.ctp:43
+msgid "Back"
+msgstr "Indietro"
+
+#: Template/Passengers/add.ctp:18
+msgid "Add Passenger"
+msgstr "Aggiungi passeggero"
+
+#: Template/Passengers/edit.ctp:24 Template/Passengers/view.ctp:10
+msgid "Edit Passenger"
+msgstr "Modifica passeggero"
+
+#: Template/Passengers/index.ctp:16
+msgid "Passengers"
+msgstr "viaggiatori"
+
+#: Template/Passengers/view.ctp:11
+msgid "Delete Passenger"
+msgstr "Elimina passeggero"
+
+#: Template/Passengers/view.ctp:26
+msgid "Slug"
+msgstr "lumaca"
+
+#: Template/Passengers/view.ctp:30
+msgid "Phone"
+msgstr "Telefono"
+
+#: Template/Passengers/view.ctp:38 Template/Users/view.ctp:22
+msgid "Email"
+msgstr "E-mail"
+
+#: Template/Tags/add.ctp:18
+msgid "Add Tag"
+msgstr "Aggiungi Tag"
+
+#: Template/Tags/edit.ctp:24 Template/Tags/view.ctp:10
+msgid "Edit Tag"
+msgstr "Modifica tag"
+
+#: Template/Tags/index.ctp:16
+msgid "Tags"
+msgstr "tag"
+
+#: Template/Tags/view.ctp:11
+msgid "Delete Tag"
+msgstr "Elimina tag"
+
+#: Template/Users/add.ctp:18
+msgid "Add User"
+msgstr "Aggiungi utente"
+
+#: Template/Users/edit.ctp:24 Template/Users/view.ctp:10
+msgid "Edit User"
+msgstr "Modifica utente"
+
+#: Template/Users/index.ctp:16
+msgid "Users"
+msgstr "utenti"
+
+#: Template/Users/view.ctp:11
+msgid "Delete User"
+msgstr "Elimina utente"
+
+#: Template/Users/view.ctp:26
+msgid "Password"
+msgstr "Parola d'ordine"
+
