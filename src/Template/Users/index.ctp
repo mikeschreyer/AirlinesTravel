@@ -34,10 +34,6 @@
                     <td>
                         <?= $this->Html->link(__('Send Email'), ['action' => 'emails', $user->id]) ?>
                     </td>
-                    <td>
-                    <?= $this->Html->link(__('A propos'), ['controller' => 'Apropos' ,'action' => 'index']) ?>
-                    </td>
-
                 </tr>
             <?php endforeach; ?>
         </tbody>

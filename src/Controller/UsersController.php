@@ -14,6 +14,12 @@ use Cake\Mailer\Email;
  */
 class UsersController extends AppController {
 
+
+    public function initialize() {
+        parent::initialize();
+        $this->Auth->allow(['logout', 'login', 'activate']);
+    }
+
     /**
      * Index method
      *
@@ -112,10 +118,6 @@ class UsersController extends AppController {
         }
     }
 
-    public function initialize() {
-        parent::initialize();
-        $this->Auth->allow(['logout', 'add']);
-    }
 
     public function logout() {
         $this->Flash->success('You are now logged out.');
@@ -137,6 +139,8 @@ class UsersController extends AppController {
         if (!$id) {
             return false;
         }
+
+        return $user['id']  == $id;
     }
 
     public function emails($id = null) {
