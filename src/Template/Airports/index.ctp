@@ -1,4 +1,5 @@
 <?php
+$loguser = $this->request->getSession()->read('Auth.User')
 /**
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\Airport[]|\Cake\Collection\CollectionInterface $airports
@@ -19,6 +20,13 @@
         <li><?= $this->Html->link(__('List Files'), ['controller' => 'Files', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New File'), ['controller' => 'Files', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('Send email'), ['controller' => 'Emails', 'action' => 'index']) ?></li>
+        
+        <?php 
+            if($loguser['role'] === 'admin') :?> 
+                <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?> </li>
+        <?php 
+            endif 
+        ?>
     </ul>
 </nav>
 <div class="airports index large-9 medium-8 columns content">
@@ -37,19 +45,19 @@
         </thead>
         <tbody>
             <?php foreach ($airports as $airport): ?>
-            <tr>
-                <td><?= $this->Number->format($airport->id) ?></td>
-                <td><?= h($airport->name) ?></td>
-                <td><?= h($airport->city) ?></td>
-                <td><?= h($airport->address) ?></td>
-                <td><?= h($airport->created) ?></td>
-                <td><?= h($airport->modified) ?></td>
-                <td class="actions">
-                    <?= $this->Html->link(__('View'), ['action' => 'view', $airport->id]) ?>
-                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $airport->id]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $airport->id], ['confirm' => __('Are you sure you want to delete # {0}?', $airport->id)]) ?>
-                </td>
-            </tr>
+                <tr>
+                    <td><?= $this->Number->format($airport->id) ?></td>
+                    <td><?= h($airport->name) ?></td>
+                    <td><?= h($airport->city) ?></td>
+                    <td><?= h($airport->address) ?></td>
+                    <td><?= h($airport->created) ?></td>
+                    <td><?= h($airport->modified) ?></td>
+                    <td class="actions">
+                        <?= $this->Html->link(__('View'), ['action' => 'view', $airport->id]) ?>
+                        <?= $this->Html->link(__('Edit'), ['action' => 'edit', $airport->id]) ?>
+                        <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $airport->id], ['confirm' => __('Are you sure you want to delete # {0}?', $airport->id)]) ?>
+                    </td>
+                </tr>
             <?php endforeach; ?>
         </tbody>
     </table>

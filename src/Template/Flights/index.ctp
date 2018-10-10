@@ -1,4 +1,5 @@
 <?php
+$loguser = $this->request->getSession()->read('Auth.User')
 /**
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\Flight[]|\Cake\Collection\CollectionInterface $flights
@@ -10,6 +11,13 @@
         <li><?= $this->Html->link(__('New Flight'), ['action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Airports'), ['controller' => 'Airports', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Airport'), ['controller' => 'Airports', 'action' => 'add']) ?></li>
+        
+         <?php 
+            if($loguser['role'] === 'admin') :?> 
+                <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?> </li>
+        <?php 
+            endif 
+        ?>
     </ul>
 </nav>
 <div class="flights index large-9 medium-8 columns content">

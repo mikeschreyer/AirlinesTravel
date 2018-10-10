@@ -1,4 +1,5 @@
 <?php
+$loguser = $this->request->getSession()->read('Auth.User')
 /**
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\Tag[]|\Cake\Collection\CollectionInterface $tags
@@ -10,6 +11,13 @@
         <li><?= $this->Html->link(__('New Tag'), ['action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Flights'), ['controller' => 'Flights', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Flight'), ['controller' => 'Flights', 'action' => 'add']) ?></li>
+        
+         <?php 
+            if($loguser['role'] === 'admin') :?> 
+                <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?> </li>
+        <?php 
+            endif 
+        ?>
     </ul>
 </nav>
 <div class="tags index large-9 medium-8 columns content">

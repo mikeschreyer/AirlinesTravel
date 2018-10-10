@@ -19,6 +19,9 @@
         <?php
             echo $this->Form->control('email');
             echo $this->Form->control('password');
+            echo $this->Form->Control('role');
+            $options = array('supervisor' => 'Supervisor', 'admin' => 'Admin');
+            echo $this->Form->select('role', $options);
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

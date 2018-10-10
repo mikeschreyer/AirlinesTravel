@@ -148,7 +148,6 @@ class UsersController extends AppController {
             'contain' => []
         ]);
         
-        
         $email = $user['email'];
         $email = new Email('default');
         $email->To($user['email'])->Subject('Airports Travels (site de Schreyer Michel)')->send('Voici un email envoyer depuis le site crée et développé par Michel Schreyer'
