@@ -22,8 +22,16 @@ use Cake\Core\Plugin;
 use Cake\Routing\RouteBuilder;
 use Cake\Routing\Router;
 use Cake\Routing\Route\DashedRoute;
-
+Router::extensions(['pdf']);
 Router::defaultRouteClass(DashedRoute::class);
+Router::prefix('api', function ($routes) {
+    $routes->extensions(['json', 'xml']);
+    $routes->resources('modele');
+    Router::connect('/api/users', ['controller' => 'users', 'action' => 'index', 'prefix' => 'api']);
+    $routes->fallbacks('InflectedRoute');
+});
+
+Router::prefix('Admin', function ($routes) { $routes->fallbacks('InflectedRoute'); });
 
 Router::scope('/', function (RouteBuilder $routes) {
    

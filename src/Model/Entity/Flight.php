@@ -15,6 +15,7 @@ use Cake\ORM\Entity;
  * @property \Cake\I18n\FrozenTime $date_reservation
  * @property int $created
  * @property int $modified
+ * @property int $color_id
  *
  * @property \App\Model\Entity\User $user
  * @property \App\Model\Entity\Passenger $passenger
@@ -42,6 +43,7 @@ class Flight extends Entity
         'date_reservation' => true,
         'created' => true,
         'modified' => true,
+        'color_id' => true,
         'user' => true,
         'passenger' => true,
         'airport' => true,

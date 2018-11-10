@@ -16,7 +16,7 @@ class AirportsTableTest extends TestCase
      *
      * @var \App\Model\Table\AirportsTable
      */
-    public $Airports;
+    public $AirportsTable;
 
     /**
      * Fixtures
@@ -25,6 +25,8 @@ class AirportsTableTest extends TestCase
      */
     public $fixtures = [
         'app.airports',
+        //'app.airports_city_translation',
+        //'app.i18n',
         'app.flights'
     ];
 
@@ -37,7 +39,7 @@ class AirportsTableTest extends TestCase
     {
         parent::setUp();
         $config = TableRegistry::getTableLocator()->exists('Airports') ? [] : ['className' => AirportsTable::class];
-        $this->Airports = TableRegistry::getTableLocator()->get('Airports', $config);
+        $this->AirportsTable = TableRegistry::getTableLocator()->get('Airports', $config);
     }
 
     /**
@@ -47,7 +49,7 @@ class AirportsTableTest extends TestCase
      */
     public function tearDown()
     {
-        unset($this->Airports);
+        unset($this->AirportsTable);
 
         parent::tearDown();
     }

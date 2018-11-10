@@ -8,7 +8,29 @@ class AirportsController extends AppController {
 
     public function initialize() {
         parent::initialize();
-        $this->Auth->allow(['tags']);
+       // $this->Auth->allow(['autocomplete', 'findAirports', 'add', 'edit', 'delete']);
+    }
+
+    public function findAirports() {
+
+        if ($this->request->is('ajax')) {
+
+            $this->autoRender = false;
+            $name = $this->request->query['term'];
+            $results = $this->Airports->find('all', array(
+                'conditions' => array('Airports.name LIKE ' => '%' . $name . '%')
+            ));
+
+            $resultArr = array();
+            foreach ($results as $result) {
+                $resultArr[] = array('label' => $result['name'], 'value' => $result['name']);
+            }
+            echo json_encode($resultArr);
+        }
+    }
+
+    public function autocomplete() {
+
     }
 
     public function index() {
@@ -29,9 +51,7 @@ class AirportsController extends AppController {
         $airport = $this->Airports->newEntity();
         if ($this->request->is('post')) {
             $airport = $this->Airports->patchEntity($airport, $this->request->getData());
-
             $airport->user_id = $this->Auth->user('id');
-
             if ($this->Airports->save($airport)) {
                 $this->Flash->success(__('The airport has been saved.'));
                 return $this->redirect(['action' => 'index']);

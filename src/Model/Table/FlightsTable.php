@@ -12,6 +12,7 @@ use Cake\Validation\Validator;
  * @property \App\Model\Table\UsersTable|\Cake\ORM\Association\BelongsTo $Users
  * @property \App\Model\Table\PassengersTable|\Cake\ORM\Association\BelongsTo $Passengers
  * @property \App\Model\Table\AirportsTable|\Cake\ORM\Association\BelongsTo $Airports
+ * @property |\Cake\ORM\Association\BelongsTo $Colors
  * @property \App\Model\Table\TagsTable|\Cake\ORM\Association\BelongsToMany $Tags
  *
  * @method \App\Model\Entity\Flight get($primaryKey, $options = [])
@@ -37,30 +38,32 @@ class FlightsTable extends Table
     public function initialize(array $config)
     {
         parent::initialize($config);
-        
+
         $this->setTable('flights');
-        $this->setDisplayField('id');
+        $this->setDisplayField('name');
         $this->setPrimaryKey('id');
 
         $this->addBehavior('Timestamp');
-        $this->belongsToMany('Tags');
 
         $this->belongsTo('Users', [
             'foreignKey' => 'user_id',
             'joinType' => 'INNER'
         ]);
         $this->belongsTo('Passengers', [
-            'foreignKey' => 'passenger_id',
-            'joinType' => 'INNER'
+            'foreignKey' => 'passenger_id'
         ]);
         $this->belongsTo('Airports', [
-            'foreignKey' => 'airport_id',
-            'joinType' => 'INNER'
+            'foreignKey' => 'airport_id'
         ]);
+
         $this->belongsToMany('Tags', [
             'foreignKey' => 'flight_id',
             'targetForeignKey' => 'tag_id',
             'joinTable' => 'flights_tags'
+        ]);
+
+        $this->belongsTo('colors', [
+            'foreignKey' => 'color_id'
         ]);
     }
 
@@ -78,18 +81,15 @@ class FlightsTable extends Table
 
         $validator
             ->dateTime('depart')
-            ->requirePresence('depart', 'create')
-            ->notEmpty('depart');
+            ->allowEmpty('depart');
 
         $validator
             ->dateTime('arrival')
-            ->requirePresence('arrival', 'create')
-            ->notEmpty('arrival');
+            ->allowEmpty('arrival');
 
         $validator
             ->dateTime('date_reservation')
-            ->requirePresence('date_reservation', 'create')
-            ->notEmpty('date_reservation');
+            ->allowEmpty('date_reservation');
 
         return $validator;
     }
@@ -103,9 +103,10 @@ class FlightsTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
+        $rules->add($rules->existsIn(['user_id'], 'Users'));
         $rules->add($rules->existsIn(['passenger_id'], 'Passengers'));
         $rules->add($rules->existsIn(['airport_id'], 'Airports'));
-        $rules->add($rules->existsIn(['user_id'], 'Users'));
+        $rules->add($rules->existsIn(['color_id'], 'Colors'));
 
         return $rules;
     }

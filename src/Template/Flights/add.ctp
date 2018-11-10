@@ -1,4 +1,13 @@
 <?php
+$urlToLinkedListFilter = $this->Url->build([
+    "controller" => "Colors",
+    "action" => "getByModele",
+    "_ext" => "json"
+        ]);
+echo $this->Html->scriptBlock('var urlToLinkedListFilter = "' . $urlToLinkedListFilter . '";', ['block' => true]);
+echo $this->Html->script('Flights/add', ['block' => 'scriptBottom']);
+?>
+<?php
 /**
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\Flight $flight
@@ -16,6 +25,8 @@
         <li><?= $this->Html->link(__('New Airport'), ['controller' => 'Airports', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Tags'), ['controller' => 'Tags', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Tag'), ['controller' => 'Tags', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List color'), ['controller' => 'color', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New color'), ['controller' => 'color', 'action' => 'add']) ?></li>
     </ul>
 </nav>
 <div class="flights form large-9 medium-8 columns content">
@@ -23,13 +34,15 @@
     <fieldset>
         <legend><?= __('Add Flight') ?></legend>
         <?php
-            echo $this->Form->control('user_id', ['options' => $users]);
-            echo $this->Form->control('passenger_id', ['options' => $passengers]);
-            echo $this->Form->control('airport_id', ['options' => $airports]);
+            echo $this->Form->control('modele_id', ['options' => $modele]);
+            echo $this->Form->control('color_id', ['options' => $color]);
+           // echo $this->Form->control('user_id', ['options' => $users]);
+            echo $this->Form->control('passenger', ['options' => $passengers]);
+            echo $this->Form->control('passenger');
+            echo $this->Form->control('airport');
             echo $this->Form->control('depart');
             echo $this->Form->control('arrival');
-            echo $this->Form->control('date_reservation');
-            echo $this->Form->control('tags._ids', ['options' => $tags]);
+
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

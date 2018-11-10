@@ -29,6 +29,7 @@ class FlightsSeed extends AbstractSeed
                 'date_reservation' => '2018-09-27 14:18:00',
                 'created' => '18',
                 'modified' => '10',
+                'color_id' => NULL,
             ],
         ];
 

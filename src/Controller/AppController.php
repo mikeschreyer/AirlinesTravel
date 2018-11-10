@@ -3,11 +3,30 @@
 namespace App\Controller;
 
 use Cake\Controller\Controller;
-use Cake\Event\Event;
-use Cake\I18n\I18n;
 
-class AppController extends Controller {
+class AppController extends Controller
+{
+    use \Crud\Controller\ControllerTrait;
 
+    public $components = [
+        'RequestHandler',
+        'Crud.Crud' => [
+            'actions' => [
+                'Crud.Index',
+                'Crud.View',
+                'Crud.Add',
+                'Crud.Edit',
+                'Crud.Delete'
+            ],
+            'listeners' => [
+                'Crud.Api',
+                'Crud.ApiPagination',
+                'Crud.ApiQueryLog'
+            ]
+        ]
+    ];
+}
+/*
     public function initialize() {
         parent::initialize();
         I18n::setLocale($this->request->session()->read('Config.language'));
@@ -49,9 +68,9 @@ class AppController extends Controller {
     public function changeLang($lang = 'en_US') {
         I18n::setLocale($lang);
         $this->request->session()->write('Config.language', $lang);
-        //debug($lang);
-        //die();
         return $this->redirect($this->request->referer());
-    }
-
 }
+
+    }*/
+
+

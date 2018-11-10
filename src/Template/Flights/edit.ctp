@@ -1,4 +1,13 @@
 <?php
+$urlToLinkedListFilter = $this->Url->build([
+    "controller" => "Colors",
+    "action" => "getByModele",
+    "_ext" => "json"
+        ]);
+echo $this->Html->scriptBlock('var urlToLinkedListFilter = "' . $urlToLinkedListFilter . '";', ['block' => true]);
+echo $this->Html->script('Flights/add', ['block' => 'scriptBottom']);
+?>
+<?php
 /**
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\Flight $flight
@@ -29,7 +38,10 @@
     <fieldset>
         <legend><?= __('Edit Flight') ?></legend>
         <?php
-            echo $this->Form->control('user_id', ['options' => $users]);
+
+            echo $this->Form->input('modele_id', ['options' => $modele, 'default' => $flight['modele']['id']]);
+            echo $this->Form->control('color_id', ['options' => $color]);
+            //echo $this->Form->control('user_id', ['options' => $users]);
             echo $this->Form->control('passenger_id', ['options' => $passengers]);
             echo $this->Form->control('airport_id', ['options' => $airports]);
             echo $this->Form->control('depart');

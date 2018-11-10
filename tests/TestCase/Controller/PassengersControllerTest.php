@@ -21,6 +21,16 @@ class PassengersControllerTest extends IntegrationTestCase
     ];
 
     /**
+     * Test isAuthorized method
+     *
+     * @return void
+     */
+    public function testIsAuthorized()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
      * Test index method
      *
      * @return void

@@ -24,6 +24,10 @@
 <div class="flights view large-9 medium-8 columns content">
     <h3><?= h($flight->id) ?></h3>
     <table class="vertical-table">
+    <tr>
+                <th scope="row"><?= __('Color') ?></th>
+                <td><?= h($flight->color['color']) ?></td>
+            </tr>
         <tr>
             <th scope="row"><?= __('User') ?></th>
             <td><?= $flight->has('user') ? $this->Html->link($flight->user->id, ['controller' => 'Users', 'action' => 'view', $flight->user->id]) : '' ?></td>

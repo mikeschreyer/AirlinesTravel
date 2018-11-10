@@ -28,7 +28,7 @@ class FlightsTableTest extends TestCase
         'app.users',
         'app.passengers',
         'app.airports',
-        'app.tags'
+        //'app.tags'
     ];
 
     /**

@@ -284,7 +284,7 @@ ALTER TABLE `flights_tags`
 --
 ALTER TABLE `i18n`
   ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `I18N_LOCALE_FIELD` (`locale`,`model`,`foreign_key`,`field`),
+ ADD UNIQUE KEY `I18N_LOCALE_FIELD` (`locale`,`model`,`foreign_key`,`field`),
   ADD KEY `I18N_FIELD` (`model`,`foreign_key`,`field`);
 
 --

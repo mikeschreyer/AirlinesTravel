@@ -8,6 +8,8 @@ $loguser = $this->request->getSession()->read('Auth.User')
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
+        <li><?= $this->Html->link(__('page admin modele'), ['controller' => 'admin/Modele', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New Modele monopage'), ['controller' => 'Modele', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Airport'), ['action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Flights'), ['controller' => 'Flights', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Flight'), ['controller' => 'Flights', 'action' => 'add']) ?></li>
@@ -20,6 +22,8 @@ $loguser = $this->request->getSession()->read('Auth.User')
         <li><?= $this->Html->link(__('List Files'), ['controller' => 'Files', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New File'), ['controller' => 'Files', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('Send email'), ['controller' => 'Emails', 'action' => 'index']) ?></li>
+
+
         
         <?php 
             if($loguser['role'] === 'admin') :?> 
@@ -54,6 +58,7 @@ $loguser = $this->request->getSession()->read('Auth.User')
                     <td><?= h($airport->modified) ?></td>
                     <td class="actions">
                         <?= $this->Html->link(__('View'), ['action' => 'view', $airport->id]) ?>
+                        <?= $this->Html->link('(pdf)', ['action' => 'view', $airport->id . '.pdf']) ?>
                         <?= $this->Html->link(__('Edit'), ['action' => 'edit', $airport->id]) ?>
                         <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $airport->id], ['confirm' => __('Are you sure you want to delete # {0}?', $airport->id)]) ?>
                     </td>

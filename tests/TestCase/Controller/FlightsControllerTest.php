@@ -20,8 +20,8 @@ class FlightsControllerTest extends IntegrationTestCase
         'app.users',
         'app.passengers',
         'app.airports',
-        'app.tags',
-        'app.flights_tags'
+        //'app.tags',
+        //'app.flights_tags'
     ];
 
     /**

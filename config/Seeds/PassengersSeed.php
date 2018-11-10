@@ -28,6 +28,7 @@ class PassengersSeed extends AbstractSeed
                 'email' => 'mschreyer@gmail.com',
                 'created' => '2018-09-05 13:51:46',
                 'modified' => '2018-09-05 13:51:46',
+                'active' => NULL,
             ],
         ];
 

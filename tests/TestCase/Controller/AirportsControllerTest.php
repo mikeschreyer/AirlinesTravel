@@ -17,8 +17,22 @@ class AirportsControllerTest extends IntegrationTestCase
      */
     public $fixtures = [
         'app.airports',
-        'app.flights'
+        //'app.airports_city_translation',
+        //'app.i18n',
+        'app.flights',
+        'core.translates'
+
     ];
+
+    /**
+     * Test initialize method
+     *
+     * @return void
+     */
+    public function testInitialize()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
 
     /**
      * Test index method
@@ -27,7 +41,9 @@ class AirportsControllerTest extends IntegrationTestCase
      */
     public function testIndex()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+
+        $this->get('/airports');
+        $this->assertResponseOk();
     }
 
     /**
@@ -37,7 +53,8 @@ class AirportsControllerTest extends IntegrationTestCase
      */
     public function testView()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+        $this->get('/airports/view/1');
+        $this->assertResponseOk();
     }
 
     /**
@@ -47,7 +64,21 @@ class AirportsControllerTest extends IntegrationTestCase
      */
     public function testAdd()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+
+        $this->session([
+            'Auth' => [
+                'User' => [
+                    'id' => 1,
+                    'email' => 'Lorem ipsum dolor sit amet',
+                    'password' => 'Lorem ipsum dolor sit amet',
+                    'role' => 'Lorem ipsum dolor sit amet',
+                    'created' => null,
+                    'modified' => null
+                ]
+            ]
+        ]);
+        $this->get('/airports/add');
+        $this->assertResponseSuccess();
     }
 
     /**
@@ -57,7 +88,18 @@ class AirportsControllerTest extends IntegrationTestCase
      */
     public function testEdit()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+        $this->session([
+            'Auth' => [
+                'Airport' => ['id' => 1,
+                    'Name' => 'Lorem ipsum dolor sit amet',
+                    'City' => 'Lorem ipsum dolor sit amet',
+                    'Adresse' => 'Lorem ipsum dolor sit amet'
+                ]
+            ]
+        ]);
+
+        $this->get('/airports/edit/1');
+        $this->assertResponseSuccess();
     }
 
     /**
@@ -66,6 +108,46 @@ class AirportsControllerTest extends IntegrationTestCase
      * @return void
      */
     public function testDelete()
+    {
+        $this->enableCsrfToken();
+        $this->enableSecurityToken();
+        $this->delete('/airports/delete/1');
+        $this->assertResponseSuccess();
+
+    }
+
+    public function testAddAuthenticated()
+    {
+        $this->session([
+            'Auth' => [
+                'User' => [
+                    'id' => 1,
+                    'email' => 'Lorem ipsum dolor sit amet',
+                    'password' => 'Lorem ipsum dolor sit amet',
+                    'role' => 'Lorem ipsum dolor sit amet',
+                    'created' => null,
+                    'modified' => null
+                ]
+            ]
+        ]);
+        $this->get('/airports/add');
+
+        $this->assertResponseOk();
+
+    }
+
+    public function testAddUnauthenticatedFail() {
+        $this->get('/users/logout');
+        $this->assertRedirect(['controller' => 'Users', 'action' => 'login']);
+
+    }
+
+    /**
+     * Test isAuthorized method
+     *
+     * @return void
+     */
+    public function testIsAuthorized()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }
