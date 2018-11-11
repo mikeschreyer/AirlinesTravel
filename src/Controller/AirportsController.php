@@ -8,7 +8,7 @@ class AirportsController extends AppController {
 
     public function initialize() {
         parent::initialize();
-       // $this->Auth->allow(['autocomplete', 'findAirports', 'add', 'edit', 'delete']);
+        $this->Auth->allow(['autocomplete', 'findAirports', 'add', 'edit', 'delete']);
     }
 
     public function findAirports() {

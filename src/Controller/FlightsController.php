@@ -107,10 +107,6 @@ class FlightsController extends AppController
             'conditions' => ['colors.modele_id' => $modele_id],
         ]);
 
-
-
-
-
         $users = $this->Flights->Users->find('list', ['limit' => 200]);
         $passengers = $this->Flights->Passengers->find('list', ['limit' => 200]);
         $airports = $this->Flights->Airports->find('list', ['limit' => 200]);

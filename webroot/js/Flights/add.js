@@ -18,7 +18,7 @@ $(document).ready(function () {
                 }
             });
         } else {
-            $('#color-id').html('<option value="">Select modele first</option>');
+            $('#color-id').html('<option value="">Select color first</option>');
         }
     });
 });

@@ -60,6 +60,38 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         </ul>
         <div class="top-bar-section">
             <ul class="right">
+             <li>
+                                    <?php
+                                    $loguser = $this->request->session()->read('Auth.User');
+                                    if ($loguser) {
+                                        $user = $loguser['email'];
+                                        echo $this->Html->link($user, ['controller' => 'Users', 'action' => 'view', $loguser['id']]);
+                                        ?>
+                                    </li>
+                                    <li>
+                                        <?php echo $this->Html->link(__('Logout'), ['controller' => 'Users', 'action' => 'logout']) ?>
+                                    </li>
+                                    <?php
+                                } else {
+                                    echo $this->Html->link(__('Login'), ['controller' => 'Users', 'action' => 'login']);
+                                }
+                                ?>
+            <li><?=
+                   $this->Html->link('Listes dynamiques', [
+                   'controller' => 'Flights',
+                   'action' => 'add'
+                   ]);
+                   ?>
+
+                   </li>
+                   <li><?=
+                   $this->Html->link('Autocomplete', [
+                   'controller' => 'Airports',
+                   'action' => 'autocomplete'
+                   ]);
+                   ?>
+                </li>
+
                 <li><a target="_blank" href="https://book.cakephp.org/3.0/">Documentation</a></li>
                 <li><a target="_blank" href="https://api.cakephp.org/3.0/">API</a></li>
             </ul>
@@ -73,6 +105,6 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     </footer>
     <?= $this->fetch('scriptLibraries') ?>
     <?= $this->fetch('script'); ?>
-    <?= $this->fetch('scriptBottom') ?> 
+    <?= $this->fetch('scriptBottom') ?>
 </body>
 </html>

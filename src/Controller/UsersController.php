@@ -13,6 +13,40 @@ use App\Controller\AppController;
 class UsersController extends AppController
 {
 
+    public function initialize() {
+        parent::initialize();
+        $this->Auth->allow(['logout']);
+    }
+
+    public function isAuthorized($user) {
+        $action = $this->request->getParam('action');
+        if (isset($user['role']) && $user['role'] === 'admin') {
+            return true;
+        }
+        $id = $this->request->getParam('pass.0');
+        if (!$id) {
+            return false;
+        }
+        return $user['id'] == $id;
+
+    }
+
+    public function login() {
+        if ($this->request->is('post')) {
+            $user = $this->Auth->identify();
+            if ($user) {
+                $this->Auth->setUser($user);
+                return $this->redirect($this->Auth->redirectUrl());
+            }
+            $this->Flash->error(__('Your username or password is incorrect.'));
+        }
+    }
+    public function logout() {
+        $this->Flash->success(__('You are now logged out.'));
+        $this->Auth->logout();
+        return $this->redirect(['controller' => 'Home', 'action' => 'index']);
+    }
+
     /**
      * Index method
      *

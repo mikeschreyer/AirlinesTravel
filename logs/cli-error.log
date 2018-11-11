@@ -2246,3 +2246,621 @@ Stack Trace:
 #2 {main}
 
 
+2018-11-10 23:55:43 Error: [Error] Call to a member function success() on boolean
+Request URL: /airports/delete/1
+Stack Trace:
+#0 [internal function]: App\Controller\AirportsController->delete('1')
+#1 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php(51): call_user_func_array(Array, Array)
+#2 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\AppController->invokeAction()
+#3 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\AirportsController))
+#4 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(149): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#15 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(495): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#16 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(442): Cake\TestSuite\IntegrationTestCase->_sendRequest('/airports/delet...', 'DELETE')
+#17 C:\Program Files (x86)\Ampps\www\AirlinesTravel\tests\TestCase\Controller\AirportsControllerTest.php(114): Cake\TestSuite\IntegrationTestCase->delete('/airports/delet...')
+#18 [internal function]: App\Test\TestCase\Controller\AirportsControllerTest->testDelete()
+#19 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(1071): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\AirportsControllerTest), Array)
+#20 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(939): PHPUnit\Framework\TestCase->runTest()
+#21 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestResult.php(698): PHPUnit\Framework\TestCase->runBare()
+#22 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\AirportsControllerTest))
+#23 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#24 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#25 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#26 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#27 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#28 {main}
+
+
+2018-11-10 23:55:43 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::logout() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'logout',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/logout
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\AppController->invokeAction()
+#1 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(149): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#13 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(495): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#14 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(375): Cake\TestSuite\IntegrationTestCase->_sendRequest('/users/logout', 'GET')
+#15 C:\Program Files (x86)\Ampps\www\AirlinesTravel\tests\TestCase\Controller\AirportsControllerTest.php(140): Cake\TestSuite\IntegrationTestCase->get('/users/logout')
+#16 [internal function]: App\Test\TestCase\Controller\AirportsControllerTest->testAddUnauthenticatedFail()
+#17 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(1071): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\AirportsControllerTest), Array)
+#18 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(939): PHPUnit\Framework\TestCase->runTest()
+#19 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestResult.php(698): PHPUnit\Framework\TestCase->runBare()
+#20 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\AirportsControllerTest))
+#21 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#22 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#23 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#24 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#25 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#26 {main}
+
+
+2018-11-10 23:56:35 Error: [Error] Call to a member function success() on boolean
+Request URL: /airports/delete/1
+Stack Trace:
+#0 [internal function]: App\Controller\AirportsController->delete('1')
+#1 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php(51): call_user_func_array(Array, Array)
+#2 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\AppController->invokeAction()
+#3 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\AirportsController))
+#4 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(149): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#15 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(495): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#16 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(442): Cake\TestSuite\IntegrationTestCase->_sendRequest('/airports/delet...', 'DELETE')
+#17 C:\Program Files (x86)\Ampps\www\AirlinesTravel\tests\TestCase\Controller\AirportsControllerTest.php(114): Cake\TestSuite\IntegrationTestCase->delete('/airports/delet...')
+#18 [internal function]: App\Test\TestCase\Controller\AirportsControllerTest->testDelete()
+#19 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(1071): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\AirportsControllerTest), Array)
+#20 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(939): PHPUnit\Framework\TestCase->runTest()
+#21 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestResult.php(698): PHPUnit\Framework\TestCase->runBare()
+#22 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\AirportsControllerTest))
+#23 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#24 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#25 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#26 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#27 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#28 {main}
+
+
+2018-11-10 23:56:35 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::logout() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'logout',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/logout
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\AppController->invokeAction()
+#1 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(149): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#13 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(495): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#14 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(375): Cake\TestSuite\IntegrationTestCase->_sendRequest('/users/logout', 'GET')
+#15 C:\Program Files (x86)\Ampps\www\AirlinesTravel\tests\TestCase\Controller\AirportsControllerTest.php(140): Cake\TestSuite\IntegrationTestCase->get('/users/logout')
+#16 [internal function]: App\Test\TestCase\Controller\AirportsControllerTest->testAddUnauthenticatedFail()
+#17 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(1071): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\AirportsControllerTest), Array)
+#18 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(939): PHPUnit\Framework\TestCase->runTest()
+#19 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestResult.php(698): PHPUnit\Framework\TestCase->runBare()
+#20 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\AirportsControllerTest))
+#21 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#22 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#23 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#24 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#25 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#26 {main}
+
+
+2018-11-10 23:57:52 Error: [Error] Call to a member function success() on boolean
+Request URL: /airports/delete/1
+Stack Trace:
+#0 [internal function]: App\Controller\AirportsController->delete('1')
+#1 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php(51): call_user_func_array(Array, Array)
+#2 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\AppController->invokeAction()
+#3 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\AirportsController))
+#4 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(149): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#15 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(495): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#16 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(442): Cake\TestSuite\IntegrationTestCase->_sendRequest('/airports/delet...', 'DELETE')
+#17 C:\Program Files (x86)\Ampps\www\AirlinesTravel\tests\TestCase\Controller\AirportsControllerTest.php(115): Cake\TestSuite\IntegrationTestCase->delete('/airports/delet...')
+#18 [internal function]: App\Test\TestCase\Controller\AirportsControllerTest->testDelete()
+#19 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(1071): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\AirportsControllerTest), Array)
+#20 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(939): PHPUnit\Framework\TestCase->runTest()
+#21 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestResult.php(698): PHPUnit\Framework\TestCase->runBare()
+#22 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\AirportsControllerTest))
+#23 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#24 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#25 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#26 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#27 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#28 {main}
+
+
+2018-11-10 23:57:52 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::logout() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'logout',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/logout
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\AppController->invokeAction()
+#1 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(149): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#13 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(495): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#14 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(375): Cake\TestSuite\IntegrationTestCase->_sendRequest('/users/logout', 'GET')
+#15 C:\Program Files (x86)\Ampps\www\AirlinesTravel\tests\TestCase\Controller\AirportsControllerTest.php(142): Cake\TestSuite\IntegrationTestCase->get('/users/logout')
+#16 [internal function]: App\Test\TestCase\Controller\AirportsControllerTest->testAddUnauthenticatedFail()
+#17 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(1071): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\AirportsControllerTest), Array)
+#18 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(939): PHPUnit\Framework\TestCase->runTest()
+#19 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestResult.php(698): PHPUnit\Framework\TestCase->runBare()
+#20 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\AirportsControllerTest))
+#21 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#22 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#23 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#24 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#25 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#26 {main}
+
+
+2018-11-10 23:59:19 Error: [Error] Call to a member function success() on boolean
+Request URL: /airports/delete/1
+Stack Trace:
+#0 [internal function]: App\Controller\AirportsController->delete('1')
+#1 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php(51): call_user_func_array(Array, Array)
+#2 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\AppController->invokeAction()
+#3 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\AirportsController))
+#4 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(149): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#15 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(495): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#16 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(442): Cake\TestSuite\IntegrationTestCase->_sendRequest('/airports/delet...', 'DELETE')
+#17 C:\Program Files (x86)\Ampps\www\AirlinesTravel\tests\TestCase\Controller\AirportsControllerTest.php(115): Cake\TestSuite\IntegrationTestCase->delete('/airports/delet...')
+#18 [internal function]: App\Test\TestCase\Controller\AirportsControllerTest->testDelete()
+#19 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(1071): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\AirportsControllerTest), Array)
+#20 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(939): PHPUnit\Framework\TestCase->runTest()
+#21 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestResult.php(698): PHPUnit\Framework\TestCase->runBare()
+#22 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\AirportsControllerTest))
+#23 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#24 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#25 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#26 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#27 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#28 {main}
+
+
+2018-11-10 23:59:19 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::logout() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'logout',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/logout
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\AppController->invokeAction()
+#1 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(149): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#13 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(495): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#14 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(375): Cake\TestSuite\IntegrationTestCase->_sendRequest('/users/logout', 'GET')
+#15 C:\Program Files (x86)\Ampps\www\AirlinesTravel\tests\TestCase\Controller\AirportsControllerTest.php(142): Cake\TestSuite\IntegrationTestCase->get('/users/logout')
+#16 [internal function]: App\Test\TestCase\Controller\AirportsControllerTest->testAddUnauthenticatedFail()
+#17 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(1071): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\AirportsControllerTest), Array)
+#18 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(939): PHPUnit\Framework\TestCase->runTest()
+#19 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestResult.php(698): PHPUnit\Framework\TestCase->runBare()
+#20 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\AirportsControllerTest))
+#21 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#22 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#23 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#24 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#25 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#26 {main}
+
+
+2018-11-10 23:59:52 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::logout() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'logout',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/logout
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\AppController->invokeAction()
+#1 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(149): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#13 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(495): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#14 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(375): Cake\TestSuite\IntegrationTestCase->_sendRequest('/users/logout', 'GET')
+#15 C:\Program Files (x86)\Ampps\www\AirlinesTravel\tests\TestCase\Controller\AirportsControllerTest.php(142): Cake\TestSuite\IntegrationTestCase->get('/users/logout')
+#16 [internal function]: App\Test\TestCase\Controller\AirportsControllerTest->testAddUnauthenticatedFail()
+#17 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(1071): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\AirportsControllerTest), Array)
+#18 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(939): PHPUnit\Framework\TestCase->runTest()
+#19 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestResult.php(698): PHPUnit\Framework\TestCase->runBare()
+#20 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\AirportsControllerTest))
+#21 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#22 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#23 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#24 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#25 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#26 {main}
+
+
+2018-11-11 00:02:41 Error: [Error] Call to a member function success() on boolean
+Request URL: /airports/delete/1
+Stack Trace:
+#0 [internal function]: App\Controller\AirportsController->delete('1')
+#1 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php(51): call_user_func_array(Array, Array)
+#2 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\AppController->invokeAction()
+#3 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\AirportsController))
+#4 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(149): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#15 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(495): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#16 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(442): Cake\TestSuite\IntegrationTestCase->_sendRequest('/airports/delet...', 'DELETE')
+#17 C:\Program Files (x86)\Ampps\www\AirlinesTravel\tests\TestCase\Controller\AirportsControllerTest.php(114): Cake\TestSuite\IntegrationTestCase->delete('/airports/delet...')
+#18 [internal function]: App\Test\TestCase\Controller\AirportsControllerTest->testDelete()
+#19 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(1071): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\AirportsControllerTest), Array)
+#20 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(939): PHPUnit\Framework\TestCase->runTest()
+#21 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestResult.php(698): PHPUnit\Framework\TestCase->runBare()
+#22 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\AirportsControllerTest))
+#23 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#24 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#25 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#26 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#27 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#28 {main}
+
+
+2018-11-11 00:02:41 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::logout() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'logout',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/logout
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\AppController->invokeAction()
+#1 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(149): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#13 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(495): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#14 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(375): Cake\TestSuite\IntegrationTestCase->_sendRequest('/users/logout', 'GET')
+#15 C:\Program Files (x86)\Ampps\www\AirlinesTravel\tests\TestCase\Controller\AirportsControllerTest.php(140): Cake\TestSuite\IntegrationTestCase->get('/users/logout')
+#16 [internal function]: App\Test\TestCase\Controller\AirportsControllerTest->testAddUnauthenticatedFail()
+#17 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(1071): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\AirportsControllerTest), Array)
+#18 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(939): PHPUnit\Framework\TestCase->runTest()
+#19 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestResult.php(698): PHPUnit\Framework\TestCase->runBare()
+#20 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\AirportsControllerTest))
+#21 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#22 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#23 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#24 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#25 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#26 {main}
+
+
+2018-11-11 00:03:27 Error: [Error] Call to a member function success() on boolean
+Request URL: /airports/delete/1
+Stack Trace:
+#0 [internal function]: App\Controller\AirportsController->delete('1')
+#1 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php(51): call_user_func_array(Array, Array)
+#2 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\AppController->invokeAction()
+#3 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\AirportsController))
+#4 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(149): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#15 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(495): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#16 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(442): Cake\TestSuite\IntegrationTestCase->_sendRequest('/airports/delet...', 'DELETE')
+#17 C:\Program Files (x86)\Ampps\www\AirlinesTravel\tests\TestCase\Controller\AirportsControllerTest.php(114): Cake\TestSuite\IntegrationTestCase->delete('/airports/delet...')
+#18 [internal function]: App\Test\TestCase\Controller\AirportsControllerTest->testDelete()
+#19 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(1071): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\AirportsControllerTest), Array)
+#20 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(939): PHPUnit\Framework\TestCase->runTest()
+#21 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestResult.php(698): PHPUnit\Framework\TestCase->runBare()
+#22 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\AirportsControllerTest))
+#23 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#24 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#25 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#26 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#27 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#28 {main}
+
+
+2018-11-11 00:03:27 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::logout() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'logout',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/logout
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\AppController->invokeAction()
+#1 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(149): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#13 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(495): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#14 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(375): Cake\TestSuite\IntegrationTestCase->_sendRequest('/users/logout', 'GET')
+#15 C:\Program Files (x86)\Ampps\www\AirlinesTravel\tests\TestCase\Controller\AirportsControllerTest.php(140): Cake\TestSuite\IntegrationTestCase->get('/users/logout')
+#16 [internal function]: App\Test\TestCase\Controller\AirportsControllerTest->testAddUnauthenticatedFail()
+#17 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(1071): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\AirportsControllerTest), Array)
+#18 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(939): PHPUnit\Framework\TestCase->runTest()
+#19 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestResult.php(698): PHPUnit\Framework\TestCase->runBare()
+#20 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\AirportsControllerTest))
+#21 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#22 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#23 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#24 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#25 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#26 {main}
+
+
+2018-11-11 00:05:05 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::logout() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'logout',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/logout
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\AppController->invokeAction()
+#1 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(149): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#13 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(495): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#14 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(375): Cake\TestSuite\IntegrationTestCase->_sendRequest('/users/logout', 'GET')
+#15 C:\Program Files (x86)\Ampps\www\AirlinesTravel\tests\TestCase\Controller\AirportsControllerTest.php(143): Cake\TestSuite\IntegrationTestCase->get('/users/logout')
+#16 [internal function]: App\Test\TestCase\Controller\AirportsControllerTest->testAddUnauthenticatedFail()
+#17 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(1071): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\AirportsControllerTest), Array)
+#18 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(939): PHPUnit\Framework\TestCase->runTest()
+#19 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestResult.php(698): PHPUnit\Framework\TestCase->runBare()
+#20 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\AirportsControllerTest))
+#21 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#22 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#23 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#24 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#25 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#26 {main}
+
+
+2018-11-11 00:07:35 Error: [Error] Call to a member function success() on boolean
+Request URL: /airports/delete/1
+Stack Trace:
+#0 [internal function]: App\Controller\AirportsController->delete('1')
+#1 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php(51): call_user_func_array(Array, Array)
+#2 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\AppController->invokeAction()
+#3 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\AirportsController))
+#4 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(149): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#15 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(495): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#16 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(442): Cake\TestSuite\IntegrationTestCase->_sendRequest('/airports/delet...', 'DELETE')
+#17 C:\Program Files (x86)\Ampps\www\AirlinesTravel\tests\TestCase\Controller\AirportsControllerTest.php(123): Cake\TestSuite\IntegrationTestCase->delete('/airports/delet...')
+#18 [internal function]: App\Test\TestCase\Controller\AirportsControllerTest->testDelete()
+#19 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(1071): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\AirportsControllerTest), Array)
+#20 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(939): PHPUnit\Framework\TestCase->runTest()
+#21 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestResult.php(698): PHPUnit\Framework\TestCase->runBare()
+#22 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\AirportsControllerTest))
+#23 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#24 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#25 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#26 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#27 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#28 {main}
+
+
+2018-11-11 00:07:52 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Airport could not be found.
+Exception Attributes: array (
+  'class' => 'Airport',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /airport/delete/1
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(149): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#13 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(495): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#14 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(442): Cake\TestSuite\IntegrationTestCase->_sendRequest('/airport/delete...', 'DELETE')
+#15 C:\Program Files (x86)\Ampps\www\AirlinesTravel\tests\TestCase\Controller\AirportsControllerTest.php(123): Cake\TestSuite\IntegrationTestCase->delete('/airport/delete...')
+#16 [internal function]: App\Test\TestCase\Controller\AirportsControllerTest->testDelete()
+#17 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(1071): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\AirportsControllerTest), Array)
+#18 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(939): PHPUnit\Framework\TestCase->runTest()
+#19 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestResult.php(698): PHPUnit\Framework\TestCase->runBare()
+#20 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\AirportsControllerTest))
+#21 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#22 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#23 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#24 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#25 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#26 {main}
+
+
+2018-11-11 00:08:01 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Airport could not be found.
+Exception Attributes: array (
+  'class' => 'Airport',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /Airport/delete/1
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(149): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#13 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(495): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#14 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(442): Cake\TestSuite\IntegrationTestCase->_sendRequest('/Airport/delete...', 'DELETE')
+#15 C:\Program Files (x86)\Ampps\www\AirlinesTravel\tests\TestCase\Controller\AirportsControllerTest.php(123): Cake\TestSuite\IntegrationTestCase->delete('/Airport/delete...')
+#16 [internal function]: App\Test\TestCase\Controller\AirportsControllerTest->testDelete()
+#17 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(1071): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\AirportsControllerTest), Array)
+#18 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(939): PHPUnit\Framework\TestCase->runTest()
+#19 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestResult.php(698): PHPUnit\Framework\TestCase->runBare()
+#20 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\AirportsControllerTest))
+#21 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#22 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#23 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#24 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#25 C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#26 {main}
+
+

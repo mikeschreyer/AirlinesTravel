@@ -25,11 +25,11 @@ class AppController extends Controller
             ]
         ]
     ];
-}
-/*
+
+
     public function initialize() {
         parent::initialize();
-        I18n::setLocale($this->request->session()->read('Config.language'));
+       // I18n::setLocale($this->request->session()->read('Config.language'));
 
         $this->loadComponent('RequestHandler', [
             'enableBeforeRedirect' => false,
@@ -62,7 +62,7 @@ class AppController extends Controller
 
     public function isAuthorized($user) {
         // By default deny access.
-        return false;
+        return true;
     }
 
     public function changeLang($lang = 'en_US') {
@@ -71,6 +71,7 @@ class AppController extends Controller
         return $this->redirect($this->request->referer());
 }
 
-    }*/
+    }
+
 
 

@@ -10,6 +10,7 @@ $loguser = $this->request->getSession()->read('Auth.User')
         <li class="heading"><?= __('Actions') ?></li>
         <li><?= $this->Html->link(__('page admin modele'), ['controller' => 'admin/Modele', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Modele monopage'), ['controller' => 'Modele', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('List modele monopage'), ['controller' => 'modele', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Airport'), ['action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Flights'), ['controller' => 'Flights', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Flight'), ['controller' => 'Flights', 'action' => 'add']) ?></li>
@@ -17,8 +18,6 @@ $loguser = $this->request->getSession()->read('Auth.User')
         <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Passengers'), ['controller' => 'Passengers', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Passenger'), ['controller' => 'Passengers', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Tags'), ['controller' => 'Tags', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Tag'), ['controller' => 'Tags', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Files'), ['controller' => 'Files', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New File'), ['controller' => 'Files', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('Send email'), ['controller' => 'Emails', 'action' => 'index']) ?></li>

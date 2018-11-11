@@ -766,3 +766,139 @@ PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.
 
 
 
+2018-11-10 23:59:52 Notice: Notice (8): Undefined property: App\Test\TestCase\Controller\AirportsControllerTest::$AuthAdmin in [C:\Program Files (x86)\Ampps\www\AirlinesTravel\tests\TestCase\Controller\AirportsControllerTest.php, line 112]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+App\Test\TestCase\Controller\AirportsControllerTest::testDelete() - ROOT\tests\TestCase\Controller\AirportsControllerTest.php, line 112
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-11 00:05:05 Notice: Notice (8): Undefined property: App\Test\TestCase\Controller\AirportsControllerTest::$Clients in [C:\Program Files (x86)\Ampps\www\AirlinesTravel\tests\TestCase\Controller\AirportsControllerTest.php, line 115]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+App\Test\TestCase\Controller\AirportsControllerTest::testDelete() - ROOT\tests\TestCase\Controller\AirportsControllerTest.php, line 115
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-11 00:05:31 Notice: Notice (8): Undefined property: App\Test\TestCase\Controller\AirportsControllerTest::$Clients in [C:\Program Files (x86)\Ampps\www\AirlinesTravel\tests\TestCase\Controller\AirportsControllerTest.php, line 115]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+App\Test\TestCase\Controller\AirportsControllerTest::testDelete() - ROOT\tests\TestCase\Controller\AirportsControllerTest.php, line 115
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-11 00:06:06 Notice: Notice (8): Undefined property: App\Test\TestCase\Controller\AirportsControllerTest::$Airports in [C:\Program Files (x86)\Ampps\www\AirlinesTravel\tests\TestCase\Controller\AirportsControllerTest.php, line 115]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+App\Test\TestCase\Controller\AirportsControllerTest::testDelete() - ROOT\tests\TestCase\Controller\AirportsControllerTest.php, line 115
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-11 00:06:42 Notice: Notice (8): Undefined property: App\Test\TestCase\Controller\AirportsControllerTest::$airports in [C:\Program Files (x86)\Ampps\www\AirlinesTravel\tests\TestCase\Controller\AirportsControllerTest.php, line 115]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+App\Test\TestCase\Controller\AirportsControllerTest::testDelete() - ROOT\tests\TestCase\Controller\AirportsControllerTest.php, line 115
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-11 00:08:35 Notice: Notice (8): Undefined property: App\Test\TestCase\Controller\AirportsControllerTest::$Air in [C:\Program Files (x86)\Ampps\www\AirlinesTravel\tests\TestCase\Controller\AirportsControllerTest.php, line 126]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+App\Test\TestCase\Controller\AirportsControllerTest::testDelete() - ROOT\tests\TestCase\Controller\AirportsControllerTest.php, line 126
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-11 00:09:26 Notice: Notice (8): Undefined property: App\Test\TestCase\Controller\AirportsControllerTest::$Airports in [C:\Program Files (x86)\Ampps\www\AirlinesTravel\tests\TestCase\Controller\AirportsControllerTest.php, line 126]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+App\Test\TestCase\Controller\AirportsControllerTest::testDelete() - ROOT\tests\TestCase\Controller\AirportsControllerTest.php, line 126
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-11 00:09:34 Notice: Notice (8): Undefined property: App\Test\TestCase\Controller\AirportsControllerTest::$Airports in [C:\Program Files (x86)\Ampps\www\AirlinesTravel\tests\TestCase\Controller\AirportsControllerTest.php, line 126]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+App\Test\TestCase\Controller\AirportsControllerTest::testDelete() - ROOT\tests\TestCase\Controller\AirportsControllerTest.php, line 126
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
