@@ -20,7 +20,7 @@ echo $this->Html->script('Airports/autocomplete', ['block' => 'scriptBottom']);
 <fieldset>
     <legend><?= __('Search Airport') ?></legend>
     <?php
-    echo $this->Form->input('name', ['id' => 'autocomplete']);
+    echo $this->Form->input('airport', ['id' => 'autocomplete']);
     ?>
 </fieldset>
 <?= $this->Form->end() ?>
