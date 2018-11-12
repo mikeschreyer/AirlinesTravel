@@ -10,6 +10,8 @@
 <h3><a href="https://github.com/mikeschreyer/AirlinesTravel"> Lien vers mon depot github AirlinesTravel</a></h3>
 <h3><a href="http://localhost/AirlinesTravel/webroot/coverage/index.html"> Lien vers le rapport coverage</a></h3>
 <h3><a href="http://localhost/AirlinesTravel/webroot/coverage/dashboard.html"> Lien vers le dashbord des test</a></h3>
+<h4>Pour tester l'application vous pouvez vous connecter avec admin@administrateur avec mot de passe: admin</h4>
+
 <h4>Description des etapes du tp2:</h4>
 <h5>1. Pour la lecture,l'ajout, la modification et la suppression en ajax:</h5>
 <h6>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Il faut aller sur la page d'accueil et cliquer sur le lien "new modele monopage" qui va menez a cette adresse: http://localhost/AirlinesTravel/modele</h6>
