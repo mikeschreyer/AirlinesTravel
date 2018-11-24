@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="App\Test\TestCase\Controller\AirportsControllerTest" file="C:\Program Files (x86)\Ampps\www\AirlinesTravel\tests\TestCase\Controller\AirportsControllerTest.php" tests="7" assertions="12" errors="0" failures="1" skipped="4" time="0.188531">
+    <testcase name="testInitialize" class="App\Test\TestCase\Controller\AirportsControllerTest" classname="App.Test.TestCase.Controller.AirportsControllerTest" file="C:\Program Files (x86)\Ampps\www\AirlinesTravel\tests\TestCase\Controller\AirportsControllerTest.php" line="32" assertions="0" time="0.009495">
+      <skipped/>
+    </testcase>
+    <testcase name="testIndex" class="App\Test\TestCase\Controller\AirportsControllerTest" classname="App.Test.TestCase.Controller.AirportsControllerTest" file="C:\Program Files (x86)\Ampps\www\AirlinesTravel\tests\TestCase\Controller\AirportsControllerTest.php" line="42" assertions="4" time="0.124076"/>
+    <testcase name="testView" class="App\Test\TestCase\Controller\AirportsControllerTest" classname="App.Test.TestCase.Controller.AirportsControllerTest" file="C:\Program Files (x86)\Ampps\www\AirlinesTravel\tests\TestCase\Controller\AirportsControllerTest.php" line="54" assertions="0" time="0.000442">
+      <skipped/>
+    </testcase>
+    <testcase name="testAdd" class="App\Test\TestCase\Controller\AirportsControllerTest" classname="App.Test.TestCase.Controller.AirportsControllerTest" file="C:\Program Files (x86)\Ampps\www\AirlinesTravel\tests\TestCase\Controller\AirportsControllerTest.php" line="64" assertions="4" time="0.042322"/>
+    <testcase name="testEdit" class="App\Test\TestCase\Controller\AirportsControllerTest" classname="App.Test.TestCase.Controller.AirportsControllerTest" file="C:\Program Files (x86)\Ampps\www\AirlinesTravel\tests\TestCase\Controller\AirportsControllerTest.php" line="88" assertions="4" time="0.011099">
+      <failure type="PHPUnit\Framework\ExpectationFailedException">App\Test\TestCase\Controller\AirportsControllerTest::testEdit
+Status code is not between 200 and 204
+Failed asserting that 302 is equal to 204 or is less than 204.
+
+C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php:840
+C:\Program Files (x86)\Ampps\www\AirlinesTravel\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php:757
+C:\Program Files (x86)\Ampps\www\AirlinesTravel\tests\TestCase\Controller\AirportsControllerTest.php:105
+</failure>
+    </testcase>
+    <testcase name="testDelete" class="App\Test\TestCase\Controller\AirportsControllerTest" classname="App.Test.TestCase.Controller.AirportsControllerTest" file="C:\Program Files (x86)\Ampps\www\AirlinesTravel\tests\TestCase\Controller\AirportsControllerTest.php" line="113" assertions="0" time="0.000684">
+      <skipped/>
+    </testcase>
+    <testcase name="testIsAuthorized" class="App\Test\TestCase\Controller\AirportsControllerTest" classname="App.Test.TestCase.Controller.AirportsControllerTest" file="C:\Program Files (x86)\Ampps\www\AirlinesTravel\tests\TestCase\Controller\AirportsControllerTest.php" line="123" assertions="0" time="0.000413">
+      <skipped/>
+    </testcase>
+  </testsuite>
+</testsuites>
