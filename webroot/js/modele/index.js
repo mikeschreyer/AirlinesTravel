@@ -1,4 +1,4 @@
-//changement pour un commit
+//commit final pour problem avec erreur 404
 var app = angular.module('app',[]);
 
 app.controller('ModeleCRUDCtrl', ['$scope','ModeleCRUDService', function ($scope,ModeleCRUDService) {
