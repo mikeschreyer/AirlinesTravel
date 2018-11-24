@@ -1,18 +1,4 @@
 <?php
-/**
- * CakePHP(tm) : Rapid Development Framework (https://cakephp.org)
- * Copyright (c) Cake Software Foundation, Inc. (https://cakefoundation.org)
- *
- * Licensed under The MIT License
- * For full copyright and license information, please see the LICENSE.txt
- * Redistributions of files must retain the above copyright notice.
- *
- * @copyright     Copyright (c) Cake Software Foundation, Inc. (https://cakefoundation.org)
- * @link          https://cakephp.org CakePHP(tm) Project
- * @since         0.10.0
- * @license       https://opensource.org/licenses/mit-license.php MIT License
- */
-$cakeDescription = 'CakePHP: the rapid development php framework';
 ?>
 <!DOCTYPE html>
 <html>
@@ -42,6 +28,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         echo $this->Html->script([
             'https://code.jquery.com/jquery-1.12.4.js',
             'https://code.jquery.com/ui/1.12.1/jquery-ui.js',
+            'https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.js',
             'http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'
                 ], ['block' => 'scriptLibraries']
         );

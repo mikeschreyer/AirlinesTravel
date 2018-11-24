@@ -3734,3 +3734,704 @@ Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
 
 
 
+2018-11-24 15:31:59 Notice: Notice (8): Undefined variable: urlToRestApi in [C:\Program Files (x86)\Ampps\www\AirlinesTravel\src\Template\Modele\index.ctp, line 2]
+Request URL: /modele
+Referer URL: http://localhost/AirlinesTravel/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+include - APP/Template\Modele\index.ctp, line 2
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 777
+Crud\Controller\Component\CrudComponent::execute() - ROOT\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php, line 246
+App\Controller\AppController::invokeAction() - ROOT\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php, line 56
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-11-24 16:48:43 Notice: Notice (8): Undefined variable: cakeDescription in [C:\Program Files (x86)\Ampps\www\AirlinesTravel\src\Template\Layout\default.ctp, line 10]
+Request URL: /modele
+Referer URL: http://localhost/AirlinesTravel/modele
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+include - APP/Template\Layout\default.ctp, line 10
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 777
+Crud\Listener\ApiListener::render() - ROOT\vendor\friendsofcake\crud\src\Listener\ApiListener.php, line 202
+Crud\Listener\ApiListener::respond() - ROOT\vendor\friendsofcake\crud\src\Listener\ApiListener.php, line 124
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 353
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 330
+Crud\Controller\Component\CrudComponent::trigger() - ROOT\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php, line 506
+Crud\Core\Object::_trigger() - ROOT\vendor\friendsofcake\crud\src\Core\ProxyTrait.php, line 37
+Crud\Action\IndexAction::_handle() - ROOT\vendor\friendsofcake\crud\src\Action\IndexAction.php, line 60
+Crud\Action\BaseAction::handle() - ROOT\vendor\friendsofcake\crud\src\Action\BaseAction.php, line 71
+Crud\Controller\Component\CrudComponent::execute() - ROOT\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php, line 228
+App\Controller\AppController::invokeAction() - ROOT\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php, line 56
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-11-24 17:04:35 Notice: Notice (8): Undefined variable: cakeDescription in [C:\Program Files (x86)\Ampps\www\AirlinesTravel\src\Template\Layout\default.ctp, line 10]
+Request URL: /modele
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+include - APP/Template\Layout\default.ctp, line 10
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 777
+Crud\Controller\Component\CrudComponent::execute() - ROOT\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php, line 246
+App\Controller\AppController::invokeAction() - ROOT\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php, line 56
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-11-24 17:05:30 Notice: Notice (8): Undefined variable: cakeDescription in [C:\Program Files (x86)\Ampps\www\AirlinesTravel\src\Template\Layout\default.ctp, line 10]
+Request URL: /modele
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+include - APP/Template\Layout\default.ctp, line 10
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 777
+Crud\Controller\Component\CrudComponent::execute() - ROOT\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php, line 246
+App\Controller\AppController::invokeAction() - ROOT\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php, line 56
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-11-24 17:05:33 Notice: Notice (8): Undefined variable: cakeDescription in [C:\Program Files (x86)\Ampps\www\AirlinesTravel\src\Template\Layout\default.ctp, line 10]
+Request URL: /modele
+Referer URL: http://localhost/AirlinesTravel/modele
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+include - APP/Template\Layout\default.ctp, line 10
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 777
+Crud\Listener\ApiListener::render() - ROOT\vendor\friendsofcake\crud\src\Listener\ApiListener.php, line 202
+Crud\Listener\ApiListener::respond() - ROOT\vendor\friendsofcake\crud\src\Listener\ApiListener.php, line 124
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 353
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 330
+Crud\Controller\Component\CrudComponent::trigger() - ROOT\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php, line 506
+Crud\Core\Object::_trigger() - ROOT\vendor\friendsofcake\crud\src\Core\ProxyTrait.php, line 37
+Crud\Action\IndexAction::_handle() - ROOT\vendor\friendsofcake\crud\src\Action\IndexAction.php, line 60
+Crud\Action\BaseAction::handle() - ROOT\vendor\friendsofcake\crud\src\Action\BaseAction.php, line 71
+Crud\Controller\Component\CrudComponent::execute() - ROOT\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php, line 228
+App\Controller\AppController::invokeAction() - ROOT\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php, line 56
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-11-24 17:06:15 Notice: Notice (8): Undefined variable: cakeDescription in [C:\Program Files (x86)\Ampps\www\AirlinesTravel\src\Template\Layout\default.ctp, line 10]
+Request URL: /
+Referer URL: http://localhost/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+include - APP/Template\Layout\default.ctp, line 10
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 777
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-11-24 17:06:21 Notice: Notice (8): Undefined variable: cakeDescription in [C:\Program Files (x86)\Ampps\www\AirlinesTravel\src\Template\Layout\default.ctp, line 10]
+Request URL: /users
+Referer URL: http://localhost/AirlinesTravel/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+include - APP/Template\Layout\default.ctp, line 10
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 777
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-11-24 17:06:24 Notice: Notice (8): Undefined variable: cakeDescription in [C:\Program Files (x86)\Ampps\www\AirlinesTravel\src\Template\Layout\default.ctp, line 10]
+Request URL: /users/view/1
+Referer URL: http://localhost/AirlinesTravel/users
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+include - APP/Template\Layout\default.ctp, line 10
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 777
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-11-24 17:06:36 Notice: Notice (8): Undefined variable: cakeDescription in [C:\Program Files (x86)\Ampps\www\AirlinesTravel\src\Template\Layout\default.ctp, line 10]
+Request URL: /modele
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+include - APP/Template\Layout\default.ctp, line 10
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 777
+Crud\Controller\Component\CrudComponent::execute() - ROOT\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php, line 246
+App\Controller\AppController::invokeAction() - ROOT\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php, line 56
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-11-24 17:06:42 Notice: Notice (8): Undefined variable: cakeDescription in [C:\Program Files (x86)\Ampps\www\AirlinesTravel\src\Template\Layout\default.ctp, line 10]
+Request URL: /modele/view/1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+include - APP/Template\Layout\default.ctp, line 10
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 777
+Crud\Controller\Component\CrudComponent::execute() - ROOT\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php, line 246
+App\Controller\AppController::invokeAction() - ROOT\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php, line 56
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-11-24 17:09:54 Notice: Notice (8): Undefined variable: cakeDescription in [C:\Program Files (x86)\Ampps\www\AirlinesTravel\src\Template\Layout\default.ctp, line 10]
+Request URL: /
+Referer URL: http://localhost/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+include - APP/Template\Layout\default.ctp, line 10
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 777
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-11-24 17:09:58 Notice: Notice (8): Undefined variable: cakeDescription in [C:\Program Files (x86)\Ampps\www\AirlinesTravel\src\Template\Layout\default.ctp, line 10]
+Request URL: /modele
+Referer URL: http://localhost/AirlinesTravel/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+include - APP/Template\Layout\default.ctp, line 10
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 777
+Crud\Controller\Component\CrudComponent::execute() - ROOT\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php, line 246
+App\Controller\AppController::invokeAction() - ROOT\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php, line 56
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-11-24 17:10:00 Notice: Notice (8): Undefined variable: cakeDescription in [C:\Program Files (x86)\Ampps\www\AirlinesTravel\src\Template\Layout\default.ctp, line 10]
+Request URL: /modele
+Referer URL: http://localhost/AirlinesTravel/modele
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+include - APP/Template\Layout\default.ctp, line 10
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 777
+Crud\Listener\ApiListener::render() - ROOT\vendor\friendsofcake\crud\src\Listener\ApiListener.php, line 202
+Crud\Listener\ApiListener::respond() - ROOT\vendor\friendsofcake\crud\src\Listener\ApiListener.php, line 124
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 353
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 330
+Crud\Controller\Component\CrudComponent::trigger() - ROOT\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php, line 506
+Crud\Core\Object::_trigger() - ROOT\vendor\friendsofcake\crud\src\Core\ProxyTrait.php, line 37
+Crud\Action\IndexAction::_handle() - ROOT\vendor\friendsofcake\crud\src\Action\IndexAction.php, line 60
+Crud\Action\BaseAction::handle() - ROOT\vendor\friendsofcake\crud\src\Action\BaseAction.php, line 71
+Crud\Controller\Component\CrudComponent::execute() - ROOT\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php, line 228
+App\Controller\AppController::invokeAction() - ROOT\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php, line 56
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-11-24 17:12:16 Notice: Notice (8): Undefined variable: cakeDescription in [C:\Program Files (x86)\Ampps\www\AirlinesTravel\src\Template\Layout\default.ctp, line 10]
+Request URL: /modele
+Referer URL: http://localhost/AirlinesTravel/modele
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+include - APP/Template\Layout\default.ctp, line 10
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 777
+Crud\Listener\ApiListener::render() - ROOT\vendor\friendsofcake\crud\src\Listener\ApiListener.php, line 202
+Crud\Listener\ApiListener::respond() - ROOT\vendor\friendsofcake\crud\src\Listener\ApiListener.php, line 124
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 353
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 330
+Crud\Controller\Component\CrudComponent::trigger() - ROOT\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php, line 506
+Crud\Core\Object::_trigger() - ROOT\vendor\friendsofcake\crud\src\Core\ProxyTrait.php, line 37
+Crud\Action\IndexAction::_handle() - ROOT\vendor\friendsofcake\crud\src\Action\IndexAction.php, line 60
+Crud\Action\BaseAction::handle() - ROOT\vendor\friendsofcake\crud\src\Action\BaseAction.php, line 71
+Crud\Controller\Component\CrudComponent::execute() - ROOT\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php, line 228
+App\Controller\AppController::invokeAction() - ROOT\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php, line 56
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-11-24 17:12:53 Notice: Notice (8): Undefined variable: cakeDescription in [C:\Program Files (x86)\Ampps\www\AirlinesTravel\src\Template\Layout\default.ctp, line 10]
+Request URL: /modele
+Referer URL: http://localhost/AirlinesTravel/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+include - APP/Template\Layout\default.ctp, line 10
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 777
+Crud\Controller\Component\CrudComponent::execute() - ROOT\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php, line 246
+App\Controller\AppController::invokeAction() - ROOT\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php, line 56
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-11-24 19:51:12 Notice: Notice (8): Undefined variable: cakeDescription in [C:\Program Files (x86)\Ampps\www\AirlinesTravel\src\Template\Layout\default.ctp, line 10]
+Request URL: /
+Referer URL: http://localhost/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+include - APP/Template\Layout\default.ctp, line 10
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 777
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-11-24 19:51:15 Notice: Notice (8): Undefined variable: cakeDescription in [C:\Program Files (x86)\Ampps\www\AirlinesTravel\src\Template\Layout\default.ctp, line 10]
+Request URL: /users/login
+Referer URL: http://localhost/AirlinesTravel/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+include - APP/Template\Layout\default.ctp, line 10
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 777
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-11-24 19:51:20 Notice: Notice (8): Undefined variable: cakeDescription in [C:\Program Files (x86)\Ampps\www\AirlinesTravel\src\Template\Layout\default.ctp, line 10]
+Request URL: /
+Referer URL: http://localhost/AirlinesTravel/users/login
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+include - APP/Template\Layout\default.ctp, line 10
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 777
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-11-24 19:51:26 Notice: Notice (8): Undefined variable: cakeDescription in [C:\Program Files (x86)\Ampps\www\AirlinesTravel\src\Template\Layout\default.ctp, line 10]
+Request URL: /modele
+Referer URL: http://localhost/AirlinesTravel/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+include - APP/Template\Layout\default.ctp, line 10
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 777
+Crud\Controller\Component\CrudComponent::execute() - ROOT\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php, line 246
+App\Controller\AppController::invokeAction() - ROOT\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php, line 56
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-11-24 19:51:29 Notice: Notice (8): Undefined variable: cakeDescription in [C:\Program Files (x86)\Ampps\www\AirlinesTravel\src\Template\Layout\default.ctp, line 10]
+Request URL: /modele
+Referer URL: http://localhost/AirlinesTravel/modele
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+include - APP/Template\Layout\default.ctp, line 10
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 777
+Crud\Listener\ApiListener::render() - ROOT\vendor\friendsofcake\crud\src\Listener\ApiListener.php, line 202
+Crud\Listener\ApiListener::respond() - ROOT\vendor\friendsofcake\crud\src\Listener\ApiListener.php, line 124
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 353
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 330
+Crud\Controller\Component\CrudComponent::trigger() - ROOT\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php, line 506
+Crud\Core\Object::_trigger() - ROOT\vendor\friendsofcake\crud\src\Core\ProxyTrait.php, line 37
+Crud\Action\IndexAction::_handle() - ROOT\vendor\friendsofcake\crud\src\Action\IndexAction.php, line 60
+Crud\Action\BaseAction::handle() - ROOT\vendor\friendsofcake\crud\src\Action\BaseAction.php, line 71
+Crud\Controller\Component\CrudComponent::execute() - ROOT\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php, line 228
+App\Controller\AppController::invokeAction() - ROOT\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php, line 56
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-11-24 19:51:30 Notice: Notice (8): Undefined variable: cakeDescription in [C:\Program Files (x86)\Ampps\www\AirlinesTravel\src\Template\Layout\default.ctp, line 10]
+Request URL: /modele
+Referer URL: http://localhost/AirlinesTravel/modele
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+include - APP/Template\Layout\default.ctp, line 10
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 777
+Crud\Listener\ApiListener::render() - ROOT\vendor\friendsofcake\crud\src\Listener\ApiListener.php, line 202
+Crud\Listener\ApiListener::respond() - ROOT\vendor\friendsofcake\crud\src\Listener\ApiListener.php, line 124
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 353
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 330
+Crud\Controller\Component\CrudComponent::trigger() - ROOT\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php, line 506
+Crud\Core\Object::_trigger() - ROOT\vendor\friendsofcake\crud\src\Core\ProxyTrait.php, line 37
+Crud\Action\IndexAction::_handle() - ROOT\vendor\friendsofcake\crud\src\Action\IndexAction.php, line 60
+Crud\Action\BaseAction::handle() - ROOT\vendor\friendsofcake\crud\src\Action\BaseAction.php, line 71
+Crud\Controller\Component\CrudComponent::execute() - ROOT\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php, line 228
+App\Controller\AppController::invokeAction() - ROOT\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php, line 56
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
