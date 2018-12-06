@@ -9,7 +9,6 @@ $loguser = $this->request->getSession()->read('Auth.User')
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
         <li><?= $this->Html->link(__('page admin modele'), ['controller' => 'admin/Modele', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Modele monopage'), ['controller' => 'Modele', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('List modele monopage'), ['controller' => 'modele', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Airport'), ['action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Flights'), ['controller' => 'Flights', 'action' => 'index']) ?></li>
