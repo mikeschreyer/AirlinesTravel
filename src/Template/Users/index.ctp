@@ -17,13 +17,16 @@
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
-                <th scope="col"><?= $this->Paginator->sort('email') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('username') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('emails') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
+                <th scope="col" class="actions"><?= __('Envoyer email') ?></th>
             </tr>
         </thead>
         <tbody>
             <?php foreach ($users as $user): ?>
                 <tr>
+                    <td><?= h($user->username) ?></td>
                     <td><?= h($user->email) ?></td>
                     <td class="actions">
                         <?= $this->Html->link(__('View'), ['action' => 'view', $user->id]) ?>

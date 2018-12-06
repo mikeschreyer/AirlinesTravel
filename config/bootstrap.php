@@ -222,4 +222,4 @@ Configure::write('CakePdf', [
 ]);
 
 Plugin::load('CakePdf', ['bootstrap' => true]);
-//Plugin::load('ADmad/JwtAuth');
+Plugin::load('ADmad/JwtAuth');

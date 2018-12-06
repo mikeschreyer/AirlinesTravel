@@ -13,6 +13,18 @@ use App\Controller\AppController;
 class UsersController extends AppController
 {
 
+    public $paginate = [
+        'page' => 1,
+        'limit' => 10,
+        'maxLimit' => 100,
+        'fields' => [
+            'id', 'username', 'role'
+        ],
+        'sortWhitelist' => [
+            'id', 'username', 'role'
+        ]
+    ];
+
     public function initialize() {
         parent::initialize();
         $this->Auth->allow(['logout']);
@@ -44,7 +56,7 @@ class UsersController extends AppController
     public function logout() {
         $this->Flash->success(__('You are now logged out.'));
         $this->Auth->logout();
-        return $this->redirect(['controller' => 'Home', 'action' => 'index']);
+        return $this->redirect(['controller' => 'Airports', 'action' => 'index']);
     }
 
     /**

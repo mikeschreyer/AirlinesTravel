@@ -25,7 +25,7 @@
     <h3><?= h($flight->id) ?></h3>
     <table class="vertical-table">
     <tr>
-                <th scope="row"><?= __('Color') ?></th>
+                <th scope="row"><?= __('Colors') ?></th>
                 <td><?= h($flight->color['color']) ?></td>
             </tr>
         <tr>

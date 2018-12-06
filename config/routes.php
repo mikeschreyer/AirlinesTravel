@@ -29,14 +29,16 @@ Router::defaultRouteClass(DashedRoute::class);
 Router::prefix('api', function ($routes) {
     $routes->extensions(['json', 'xml']);
     $routes->resources('modele');
+    $routes->resources('Users');
     Router::connect('/api/users', ['controller' => 'users', 'action' => 'index', 'prefix' => 'api']);
+    Router::connect('/api/users/register', ['controller' => 'users', 'action' => 'add', 'prefix' => 'api']);
     $routes->fallbacks('InflectedRoute');
 });
 
 Router::prefix('Admin', function ($routes) { $routes->fallbacks('InflectedRoute'); });
 
 Router::scope('/', function (RouteBuilder $routes) {
-   
+    $routes->resources('Users');
     $routes->connect('/', ['controller' => 'Airports', 'action' => 'index']);
 
     $routes->connect('/pages/*', ['controller' => 'Airports', 'action' => 'index']);
@@ -44,3 +46,4 @@ Router::scope('/', function (RouteBuilder $routes) {
    
     $routes->fallbacks(DashedRoute::class);
 });
+Plugin::routes();

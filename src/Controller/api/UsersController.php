@@ -36,16 +36,18 @@ class UsersController extends AppController {
         if (!$user) {
             throw new UnauthorizedException('Invalid username or password');
         }
+        $this->Auth->setUser($user);
         $this->set([
             'success' => true,
+           'response' => 'Login successful',
             'data' => [
+                'id' => $user['id'],
                 'token' => JWT::encode([
                     'sub' => $user['id'],
                     'exp' => time() + 604800
-                        ], Security::salt())
+                ], Security::salt())
             ],
             '_serialize' => ['success', 'data']
         ]);
     }
-
 }

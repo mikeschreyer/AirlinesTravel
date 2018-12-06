@@ -49,4 +49,9 @@ class Application extends BaseApplication
 
         return $middlewareQueue;
     }
+
+    public function bootstrap()
+    {
+        parent::bootstrap();
+    }
 }

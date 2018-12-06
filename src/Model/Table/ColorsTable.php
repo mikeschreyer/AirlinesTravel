@@ -9,7 +9,7 @@ use Cake\Validation\Validator;
 /**
  * Color Model
  *
- * @property \App\Model\Table\ModelesTable|\Cake\ORM\Association\BelongsTo $Modeles
+ * @property \App\Model\Table\ModeleTable|\Cake\ORM\Association\BelongsTo $Modele
  *
  * @method \App\Model\Entity\Color get($primaryKey, $options = [])
  * @method \App\Model\Entity\Color newEntity($data = null, array $options = [])
@@ -37,7 +37,7 @@ class ColorsTable extends Table
         $this->setDisplayField('color');
         $this->setPrimaryKey('id');
 
-        $this->belongsTo('Modele', [
+        $this->belongsTo('modele', [
             'foreignKey' => 'modele_id'
         ]);
         $this->hasMany('Flights', [
@@ -74,7 +74,7 @@ class ColorsTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->existsIn(['modele_id'], 'Modeles'));
+        $rules->add($rules->existsIn(['modele_id'], 'Modele'));
 
         return $rules;
     }

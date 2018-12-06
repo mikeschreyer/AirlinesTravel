@@ -34,9 +34,13 @@ class ColorsController extends AppController
 
     public function index()
     {
-        $color = $this->paginate($this->Colors);
+        $this->paginate = [
+            'contain' => ['Modele']
+        ];
+        $colors = $this->paginate($this->Colors);
 
-        $this->set(compact('color'));
+        $this->set(compact('colors'));
+        $this->set('_serialize', ['colors']);
     }
 
     /**
@@ -49,9 +53,8 @@ class ColorsController extends AppController
     public function view($id = null)
     {
         $color = $this->Colors->get($id, [
-            'contain' => ['Users']
+            'contain' => ['Modele']
         ]);
-
         $this->set('color', $color);
     }
 
@@ -64,14 +67,14 @@ class ColorsController extends AppController
     {
         $color = $this->Colors->newEntity();
         if ($this->request->is('post')) {
-            $color = $this->Color->patchEntity($color, $this->request->getData());
-            if ($this->Color->save($color)) {
-                $this->Flash->success(__('The color has been saved.'));
-
-                return $this->redirect(['action' => 'index']);
+            $color = $this->Colors->patchEntity($color, $this->request->getData());
+            if ($this->Colors->save($color)) {
+                $response = ['result' => 'Color was created.'];
+            }else {
+                $response['error'] = __('The color could not be saved. Please, try again.');
             }
-            $this->Flash->error(__('The color could not be saved. Please, try again.'));
         }
+
         $this->set(compact('color'));
     }
 
@@ -84,12 +87,12 @@ class ColorsController extends AppController
      */
     public function edit($id = null)
     {
-        $color = $this->Color->get($id, [
+        $color = $this->Colors->get($id, [
             'contain' => []
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
-            $color = $this->Color->patchEntity($color, $this->request->getData());
-            if ($this->Color->save($color)) {
+            $color = $this->Colors->patchEntity($color, $this->request->getData());
+            if ($this->Colors->save($color)) {
                 $this->Flash->success(__('The color has been saved.'));
 
                 return $this->redirect(['action' => 'index']);
@@ -109,8 +112,8 @@ class ColorsController extends AppController
     public function delete($id = null)
     {
         $this->request->allowMethod(['post', 'delete']);
-        $color = $this->Color->get($id);
-        if ($this->Color->delete($color)) {
+        $color = $this->Colors->get($id);
+        if ($this->Colors->delete($color)) {
             $this->Flash->success(__('The color has been deleted.'));
         } else {
             $this->Flash->error(__('The color could not be deleted. Please, try again.'));

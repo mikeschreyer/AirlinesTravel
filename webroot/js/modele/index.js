@@ -1,13 +1,13 @@
-//commit final pour problem avec erreur 404
-var app = angular.module('app',[]);
+var app = angular.module('app', []);
 
 app.controller('ModeleCRUDCtrl', ['$scope','ModeleCRUDService', function ($scope,ModeleCRUDService) {
 
-    $scope.updateModele = function () {
+    $scope.updateModele = function (id) {
         ModeleCRUDService.updateModele($scope.modele.id,$scope.modele.name)
             .then(function success(response){
                     $scope.message = 'Modele data updated!';
                     $scope.errorMessage = '';
+                    $scope.getAllModele();
                 },
                 function error(response){
                     $scope.errorMessage = 'Error updating modele!';
@@ -15,11 +15,10 @@ app.controller('ModeleCRUDCtrl', ['$scope','ModeleCRUDService', function ($scope
                 });
     }
 
-    $scope.getModele = function () {
-        var id = $scope.modele.id;
-        ModeleCRUDService.getModele($scope.modele.id)
+    $scope.getModele = function (id) {
+        ModeleCRUDService.getModele(id)
             .then(function success(response){
-                    $scope.modele = response.data;
+                    $scope.modele = response.data.data;
                     $scope.modele.id = id;
                     $scope.message='';
                     $scope.errorMessage = '';
@@ -41,6 +40,7 @@ app.controller('ModeleCRUDCtrl', ['$scope','ModeleCRUDService', function ($scope
                 .then (function success(response){
                         $scope.message = 'Modele added!';
                         $scope.errorMessage = '';
+                        $scope.getAllModele();
                     },
                     function error(response){
                         $scope.errorMessage = 'Error adding modele!';
@@ -53,12 +53,13 @@ app.controller('ModeleCRUDCtrl', ['$scope','ModeleCRUDService', function ($scope
         }
     }
 
-    $scope.deleteModele = function () {
-        ModeleCRUDService.deleteModele($scope.modele.id)
+    $scope.deleteModele = function (id) {
+        ModeleCRUDService.deleteModele(id)
             .then (function success(response){
                     $scope.message = 'Modele deleted!';
                     $scope.modele = null;
                     $scope.errorMessage='';
+                    $scope.getAllModele();
                 },
                 function error(response){
                     $scope.errorMessage = 'Error deleting modele!';
@@ -66,10 +67,10 @@ app.controller('ModeleCRUDCtrl', ['$scope','ModeleCRUDService', function ($scope
                 })
     }
 
-    $scope.getAllModeles = function () {
-        ModeleCRUDService.getAllModeles()
+    $scope.getAllModele = function () {
+        ModeleCRUDService.getAllModele()
             .then(function success(response){
-                    $scope.modele = response.data.modele;
+                    $scope.modele = response.data.data;
                     $scope.message='';
                     $scope.errorMessage = '';
                 },
@@ -81,19 +82,24 @@ app.controller('ModeleCRUDCtrl', ['$scope','ModeleCRUDService', function ($scope
 
 }]);
 
+
+
+
 app.service('ModeleCRUDService',['$http', function ($http) {
 
     this.getModele = function getModele(modeleId){
         return $http({
             method: 'GET',
-            url: 'modele/'+modeleId
+            url: 'api/modele/'+ modeleId,
+            headers: { 'X-Requested-With' : 'XMLHttpRequest', 'Accept' : 'application/json'}
         });
     }
 
     this.addModele= function addModele(name){
         return $http({
             method: 'POST',
-            url: 'modele',
+            url: 'api/modele',
+            headers: { 'X-Requested-With' : 'XMLHttpRequest', 'Accept' : 'application/json'},
             data: {name:name}
         });
     }
@@ -101,23 +107,33 @@ app.service('ModeleCRUDService',['$http', function ($http) {
     this.deleteModele= function deleteModele(id){
         return $http({
             method: 'DELETE',
-            url: 'modele/'+id
-        })
+            url: 'api/modele/'+id,
+            headers: { 'X-Requested-With' : 'XMLHttpRequest', 'Accept' : 'application/json'}
+        });
     }
 
     this.updateModele= function updateModele(id,name){
         return $http({
             method: 'PATCH',
-            url: 'modele/'+id,
+            url: 'api/modele/'+id,
+            headers: { 'X-Requested-With' : 'XMLHttpRequest', 'Accept' : 'application/json'},
             data: {name:name}
-        })
-    }
-
-    this.getAllModeles= function getAllModeles(){
-        return $http({
-            method: 'GET',
-            url: 'modele'
         });
     }
 
+    this.getAllModele= function getAllModele(){
+        return $http({
+            method: 'GET',
+            url: 'api/modele',
+            headers: { 'X-Requested-With' : 'XMLHttpRequest', 'Accept' : 'application/json'}
+
+        });
+    }
 }]);
+
+$(document).ready(function () {
+    // initialize modal
+    $('.modal').modal();
+    localStorage.setItem('token', "no token");
+    $('#logout-btn').hide();
+});

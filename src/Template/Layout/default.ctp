@@ -1,13 +1,12 @@
 <?php
+$loguser = $this->request->getSession()->read('Auth.User');
 ?>
 <!DOCTYPE html>
 <html>
     <head>
-    <head>
         <?= $this->Html->charset() ?>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
-            <?= $cakeDescription ?>:
             <?= $this->fetch('title') ?>
         </title>
         <?= $this->Html->meta('icon') ?>
@@ -17,7 +16,7 @@
             'base.css',
             'style.css',
             'http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css',
-            'https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'
+            'https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css',
         ]);
         ?>
 
@@ -34,7 +33,6 @@
         );
         ?>
     </head>
-</head>
 <body>
     <nav class="top-bar expanded" data-topbar role="navigation">
         <ul class="title-area large-3 medium-4 columns">
@@ -51,7 +49,7 @@
                                     <?php
                                     $loguser = $this->request->session()->read('Auth.User');
                                     if ($loguser) {
-                                        $user = $loguser['email'];
+                                        $user = $loguser['username'];
                                         echo $this->Html->link($user, ['controller' => 'Users', 'action' => 'view', $loguser['id']]);
                                         ?>
                                     </li>

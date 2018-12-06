@@ -5,14 +5,10 @@ use App\Controller\Api\AppController;
 
 class ModeleController extends AppController
 {
-    public $paginate = [
-        'page' => 1,
-        'limit' => 5,
-        'maxLimit' => 15,
-        'sortWhitelist' => [
-            'id', 'name'
-        ]
-    ];
+    public function initialize() {
+        parent::initialize();
+        $this->Auth->allow(['index', 'view', 'add', 'edit', 'delete']);
+    }
 }
 /*
 
